@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/player_discard_item_width"
+        android:layout_height="@dimen/player_discard_item_height">
+
+        <ImageView
+            android:id="@+id/cardImageView"
+            android:layout_width="@dimen/player_discard_item_width"
+            android:layout_height="@dimen/player_discard_item_height"
+            android:contentDescription="@string/content_desc_game_results" />
+
+        <ImageView
+            android:id="@+id/game_results_jokerCardImg"
+            android:layout_width="@dimen/playerDiscardJokerWidthHeight"
+            android:layout_height="@dimen/playerDiscardJokerWidthHeight"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/playerDiscardJokerMargin"
+            android:layout_marginLeft="@dimen/playerDiscardJokerMargin"
+            android:src="@drawable/jocker_card_img"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main_container_buy_chips"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C201F1F"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rummy_curve_edges_white"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_grey_dark"
+                    android:text="points(buyin)"/>
+            </LinearLayout>
+
+            <!--divider-->
+            <LinearLayout
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp"
+                android:background="#EEE"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/rummy_black_gray"
+                    android:text="Wallet Balance"/>
+                <TextView
+                    android:id="@+id/balance_value_tv"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:textColor="@color/rummy_black_gray"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+
+            <!--divider-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#EEE"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="#888888"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/lobby_bet_header" />
+
+
+                <TextView
+                    android:id="@+id/bet_value_tv"
+                    android:textColor="#888888"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+
+
+            <!--divider-->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#EEE"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="#888888"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Min Buy-in" />
+
+
+
+                <TextView
+                    android:id="@+id/min_buy_value_tv"
+                    android:layout_width="0dp"
+                    android:textColor="#888888"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="160"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+
+
+            <!--divider-->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#EEE"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="#888888"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Max Buy-in" />
+
+
+                <TextView
+                    android:id="@+id/max_buy_value_tv"
+                    android:layout_width="0dp"
+                    android:textColor="#888888"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1600"
+                    android:gravity="right" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--slider work-->
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F2F2">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#FF888888"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buyin"/>
+
+                <EditText
+                    android:id="@+id/buy_in_value_tv"
+                    android:layout_width="wrap_content"
+                    android:background="@color/rummy_transparent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:digits="0123456789."
+                    android:gravity="center"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:inputType="none"
+                    android:textColor="@color/rummy_black_gray"
+                    android:text="300"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/rummy_seekbar_root_layout_bg"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content">
+
+                    <SeekBar
+
+                        android:id="@+id/seek_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:indeterminate="false"
+                        android:maxWidth="230dp"
+                        android:progress="30"
+                        android:progressDrawable="@drawable/rummy_seekbar_style_bg"
+                        android:thumb="@color/rummy_app_blue"
+                        android:thumbOffset="8dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_minbuyin_slider"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="0dp"
+                        android:textColor="#AAAAAA"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Min 160"/>
+
+                    <TextView
+                        android:id="@+id/tv_maxbuyin_slider"
+                        android:layout_marginRight="3dp"
+                        android:textColor="#AAAAAA"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Max 1600"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--bottom button-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:stateListAnimator="@null"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:background="@drawable/rummy_btn_bg_gr_grey"
+                android:textColor="@color/rummy_black_gray" />
+
+
+
+            <Button
+                android:stateListAnimator="@null"
+                android:id="@+id/join_btn"
+                android:layout_width="130dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:text="Join"
+                android:textAllCaps="false"
+                android:background="@drawable/rummy_btn_blue_squre_selector_bg"
+                android:textColor="@color/rummy_white" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

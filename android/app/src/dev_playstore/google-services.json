@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "project_number": "380931591987",
+    "project_id": "dangal-games-febf7",
+    "storage_bucket": "dangal-games-febf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380931591987:android:4a31254f421feb85057846",
+        "android_client_info": {
+          "package_name": "com.devapp.dangalgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380931591987-3rrqem8kn0ceufshu19usik311m79bge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devapp.dangalgames",
+            "certificate_hash": "6c427b4951e2ab4c0d8a68ba5c1a3951bf054601"
+          }
+        },
+        {
+          "client_id": "380931591987-jb2ier5ar59r4srcs41l5fdaohag8v3v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devapp.dangalgames",
+            "certificate_hash": "0435aa833b372b143cf75f051846fb6f11eff6f0"
+          }
+        },
+        {
+          "client_id": "380931591987-8ise68dtnuqmf6ogekodhgl40fd796ge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrFLO8bwt93olL5LnTjQ4_TP4waCXtsKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380931591987-8ise68dtnuqmf6ogekodhgl40fd796ge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380931591987:android:5428d33e2e87a8b2057846",
+        "android_client_info": {
+          "package_name": "com.devapp.play.dangalgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380931591987-0i16u0io1nqirtnskheoc0ck01mn38mi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devapp.play.dangalgames",
+            "certificate_hash": "0435aa833b372b143cf75f051846fb6f11eff6f0"
+          }
+        },
+        {
+          "client_id": "380931591987-nave9e80pq2c4ppqs8urq4on612h8hv5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devapp.play.dangalgames",
+            "certificate_hash": "6c427b4951e2ab4c0d8a68ba5c1a3951bf054601"
+          }
+        },
+        {
+          "client_id": "380931591987-8ise68dtnuqmf6ogekodhgl40fd796ge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrFLO8bwt93olL5LnTjQ4_TP4waCXtsKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380931591987-8ise68dtnuqmf6ogekodhgl40fd796ge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

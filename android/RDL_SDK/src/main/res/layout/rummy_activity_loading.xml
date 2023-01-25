@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pop_up_bg_layout"
+        android:layout_width="@dimen/oops_window_width"
+        android:layout_height="wrap_content"
+        android:background="@color/rummy_white"
+        android:gravity="center"
+        android:padding="@dimen/marginSizeSmall">
+        
+        <ImageView
+            android:layout_width="@dimen/settingsCloseBtnSize"
+            android:layout_height="@dimen/settingsCloseBtnSize"
+            android:id="@+id/llImg"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rummy_ic_failure_alert"/>
+
+        <TextView
+            android:id="@+id/loading_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/llImg"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:text="Oops! You have been disconnected. Trying to reconnect"
+            android:textColor="@color/rummy_black"
+            android:textSize="@dimen/moreInofTextSize" />
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/loading_tv"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/rummy_progress_bar_new"
+            android:layout_marginTop="@dimen/marginSizeSmall"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/rummy_transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/rummy_curve_edges_white"
+            android:padding="@dimen/marginSizeSmall"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Leave Table?"
+                android:visibility="gone"
+                android:id="@+id/tv_title_leave"
+                android:textStyle="bold"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/settingsInfoTextSize" />
+
+            <TextView
+                android:id="@+id/dialog_msg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+                android:gravity="center"
+                android:text="You have reached maximum number of points, would you like to join another game ?"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/text_secondary" />
+
+            <LinearLayout
+                android:id="@+id/ll_drop_move_confirmation"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:clickable="false"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/rummy_report_problem_cb_bg"
+                        android:id="@+id/cb_drop_move"
+                        android:textSize="18sp"
+                        android:button="@null"
+                        android:textColor="@color/rummy_black"
+                        android:buttonTint="@color/rummy_black"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textSize="10sp"
+                    android:text="Drop &amp; Move (It takes you to a new table)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="1dp"/>
+
+
+                <Button
+                    android:id="@+id/yes_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:text="YES"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@color/rummy_color_button"
+                    android:textColor="@color/rummy_White" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"/>
+
+                <Button
+                    android:id="@+id/no_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:text="NO"
+                    android:gravity="center"
+                    android:background="@color/rummy_grey"
+                    android:textColor="@color/rummy_black_gray" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/popUpCloseBtn"
+            android:layout_width="@dimen/popUpCloseBtnSize"
+            android:layout_height="@dimen/popUpCloseBtnSize"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/rummy_result_close_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

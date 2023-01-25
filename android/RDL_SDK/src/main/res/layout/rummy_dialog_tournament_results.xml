@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/rummy_transparent"
+    android:layout_width="@dimen/winner_window_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/rummy_curve_edges_filled_app_blue_dark_flat_bottom_less_round"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/popUpCloseBtnSize"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                android:layout_marginBottom="4dp"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:text="Tournament Winners"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:textStyle="bold"
+                android:id="@+id/tvTourneyname"
+                android:layout_centerVertical="true"
+                android:textColor="@color/rummy_White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/popUpCloseBtn"
+                android:layout_width="@dimen/popUpCloseBtnSize"
+                android:layout_height="@dimen/popUpCloseBtnSize"
+                android:layout_marginRight="@dimen/marginSizeSmall"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/rummy_result_close_icon" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rummy_White"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:visibility="visible"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/rummy_winner_badge" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/rummy_winner_badge_strip" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rummy_scoreBoardbgColor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rummy_White"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ListView
+                        android:id="@+id/tournament_results"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/marginSizeMedium"
+                        android:layout_marginRight="@dimen/marginSizeMedium"
+                        android:divider="@color/rummy_grey_et_bg"
+                        android:dividerHeight="0.6dp"
+                        android:scrollbars="none" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/rummy_transparent"
+        android:layout_width="@dimen/winner_window_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/winner_window_width"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_main_container"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/winner_window_width"
+                android:layout_height="wrap_content"
+                android:background="@color/rummy_app_blue_dark"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_height="@dimen/popUpCloseBtnSize"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:background="@color/rummy_app_blue_dark"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:adjustViewBounds="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/popUpCloseBtnSize"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/rummy_ic_logo_symbol" />
+
+                    <TextView
+                        android:text="Tournament Winners"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:textStyle="bold"
+                        android:textColor="@color/rummy_White"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/winner_top_bar"
+                    android:background="@color/rummy_scoreBoardbgColor">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/auto_chunk_iv_height"
+                        android:layout_marginTop="@dimen/auto_chunk_iv_height"
+                        android:background="@color/rummy_White"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ListView
+                                android:id="@+id/tournament_results"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/buyInMargin"
+                                android:layout_marginLeft="@dimen/buyInMargin"
+                                android:layout_marginRight="@dimen/buyInMargin"
+                                android:divider="@color/rummy_transparent"
+                                android:dividerHeight="0dp"
+                                android:scrollbars="none" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_alignTop="@+id/ll_main_container"
+                android:id="@+id/popUpCloseBtn"
+                android:layout_width="@dimen/popUpCloseBtnSize"
+                android:layout_height="@dimen/popUpCloseBtnSize"
+                android:layout_alignRight="@+id/ll_main_container"
+                android:scaleType="center"
+                android:src="@drawable/rummy_result_close_icon" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>-->

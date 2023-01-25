@@ -1,0 +1,1268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/paddingSizeSmallPlus"
+    android:orientation="vertical">
+
+
+    <!--//Header Details for Tourney-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/rummy_t_details_bg"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--first details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/marginSizeMicro"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Expected Prize"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/marginSizeSmall"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:tint="#30112D"
+                        android:src="@drawable/rummy_prize_blue_filled"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/rummy_black"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:id="@+id/tvTotalPrizeMoney"
+                        android:layout_marginLeft="@dimen/paddingSizeSmallPlus"
+                        android:textSize="@dimen/moreSettingsTextSize"
+                        android:text=""/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_marginLeft="@dimen/marginSizeMicro"
+                android:layout_marginRight="@dimen/marginSizeMicro"
+                android:layout_height="match_parent"
+                android:background="@color/rummy_DarkGray"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Tournament Starts"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/rummy_black"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:id="@+id/tourneyStart_tv"
+                        android:layout_marginLeft="@dimen/paddingSizeSmallPlus"
+                        android:textSize="@dimen/moreInofTextSize"
+                        android:text=""/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--second details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/marginSizeMicro"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/rummy_t_details_rect_white"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Tourney Type"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/tourneyType_tv"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/moreInofTextSize"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/rummy_DarkGray"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="@string/rupee_symbol"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/entryFee_tv"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/moreInofTextSize"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/rummy_DarkGray"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Joined"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/joined_tv"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/moreInofTextSize"
+                    android:text=""/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/marginSizeMicro"
+            android:layout_marginLeft="@dimen/paddingSizeSmallPlus"
+            android:layout_marginRight="@dimen/paddingSizeSmallPlus"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Tournament\nStarts In"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_start_day_tourney"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/moreInofTextSize"
+                    android:text="00"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Days"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_start_hour_tourney"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/moreInofTextSize"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Hours"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_start_min_tourney"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/moreInofTextSize"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Min"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/moreInofTextSize"
+                    android:id="@+id/tv_start_sec_tourney"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Sec"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/half_fab_margin"
+        android:layout_marginLeft="@dimen/marginSizeMicro"
+        android:layout_marginRight="@dimen/marginSizeMicro"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/rummy_black"
+            android:background="@drawable/rummy_btn_yellow_square_bg"
+            android:gravity="center"
+            android:id="@+id/register_btn_info"
+            android:textSize="@dimen/settingsInfoTextSize"
+            android:text="JOIN NOW"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/rummy_white"
+            android:textStyle="bold"
+            android:background="@drawable/rummy_btn_blue_squre_selector_bg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/deregister_btn_info"
+            android:textSize="@dimen/settingsInfoTextSize"
+            android:text="DE REGISTER"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/completed_ll_info"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="@dimen/paddingSizeSmall"
+            android:background="@drawable/rummy_tourney_completed_bg"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/rummy_white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/settingsInfoTextSize"
+            android:text="TOURNAMENT COMPLETED"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/rummy_white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/tv_tourney_comp_time"
+                android:textSize="@dimen/moreInofTextSize"
+                android:text=""/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/marginSizeSmall"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/rummy_black"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/textSizeSmall"
+            android:text="Registration Closes: "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/rummy_black"
+            android:gravity="left|center_vertical"
+            android:textStyle="bold"
+            android:id="@+id/regCloses_tv"
+            android:textSize="@dimen/moreInofTextSize"
+            android:text=""/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/rummy_t_details_bg_2"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingSizeSmallPlus"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="TID"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.2"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text=" : "/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:id="@+id/tid_tv"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="0"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddingSizeSmall"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Registration Starts"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.2"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text=" : "/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:id="@+id/tv_reg_starts"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="0"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddingSizeSmall"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Your Balance"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.2"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text=" : "/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_vertical"
+                    android:id="@+id/balance_tv"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="0"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddingSizeSmall"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Level"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.2"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text=" : "/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:id="@+id/level_tv"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="0"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddingSizeSmall"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Status"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.2"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text=" : "/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_vertical"
+                    android:id="@+id/status_tv"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="0"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddingSizeSmall"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Your Rank"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.2"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text=" : "/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_vertical"
+                    android:id="@+id/yourRank_tv"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="0"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/paddingSizeSmall"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="Time Between Levels"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="0.2"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text=" : "/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/timeBetweenLevels_tv"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/rummy_black"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textSizeSmall"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:visibility="gone"
+            android:layout_height="120dp"
+            android:id="@+id/iv_complete_tourney"
+            android:src="@drawable/rummy_tournament_cmpt_icon"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+    <!--//Older Layout-->
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/half_fab_margin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tourneyInfo_tv"
+            android:textSize="10sp"
+            android:text="Tourney Info"
+            android:textColor="@color/rummy_colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="TID"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3">
+                    <TextView
+                        android:text="Tourney Type"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Entry Fee"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.3">
+                    <TextView
+                        android:text="Joined"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Registration Closes"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Tournament Starts"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/playerInfo_tv"
+            android:layout_marginTop="32dp"
+            android:textSize="10sp"
+            android:text="Player Info"
+            android:textColor="@color/rummy_colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Your Balance"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Your Rank"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Level"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Time Between Levels"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="Status"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=""
+                        android:textSize="12sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/rummy_white"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/half_fab_margin"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Position"
+                    android:textSize="12sp"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="Player"
+                    android:textSize="12sp"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:text="Prize"
+                    android:textSize="12sp"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--Status RUNNING-->
+        <LinearLayout
+            android:id="@+id/runningStatus"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/half_fab_margin"
+            android:background="@drawable/rummy_curved_edges_hollow_blue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Current Tournament Status"
+                android:textColor="@color/rummy_colorAccent"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/levelStatus_tv"
+                    android:text="Level x/3"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text=" | "
+                    android:textColor="@color/rummy_colorAccent"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/levelCountdown_tv"
+                    android:text="xx:xx"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Status COMPLETED-->
+        <LinearLayout
+            android:id="@+id/completedStatus"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/half_fab_margin"
+            android:background="@drawable/rummy_curved_edges_hollow_blue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Tournament completed"
+                android:textColor="@color/rummy_white"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tourneyCompleteTime_tv"
+                    android:visibility="gone"
+                    android:text="Wed-22 Feb 03:30 AM"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="|| Winners Announced ||"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Status OTHERS-->
+        <LinearLayout
+            android:id="@+id/othersStatus"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/half_fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/rummy_white"
+                android:background="@drawable/rummy_btn_yellow_selector"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+               android:visibility="visible" />
+            <Button
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Deregister"
+                android:textAllCaps="false"
+                android:textColor="@color/rummy_white"
+                android:background="@drawable/rummy_btn_yellow_selector"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

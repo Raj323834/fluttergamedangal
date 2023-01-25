@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <in.glg.rummy.view.RummyView
+        android:id="@+id/meld_sc_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/meld_line_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/meld_line_height"
+        android:layout_marginLeft="@dimen/meld_line_margin_left"
+        android:layout_marginRight="@dimen/meld_line_margin_right"
+        android:background="@color/rummy_meldScoreRedColor"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/meld_line_margin_left"
+        android:layout_marginRight="@dimen/meld_line_margin_right">
+
+        <ImageView android:id="@+id/down_arrow_iv"
+            android:layout_width="@dimen/meld_red_arrow_width"
+            android:layout_height="@dimen/meld_red_arrow_height"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/rummy_meld_red_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/meld_score_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/meld_line_margin_left"
+        android:layout_marginRight="@dimen/meld_line_margin_right"
+        android:gravity="center"
+        android:textColor="@color/rummy_meldScoreRedColor"
+        android:textSize="@dimen/meld_score_textSize"
+        android:textStyle="bold" />
+</LinearLayout>

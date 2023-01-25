@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rummy_color_one">@color/rummy_yellow</color>
+    <color name="rummy_color_two">@color/rummy_white</color>
+    <color name="rummy_color_three">@color/rummy_black</color>
+    <color name="rummy_color_four">@color/rummy_black</color>
+
+    <!--<color name="rummy_app_blue">#1C5392</color>-->
+    <color name="rummy_app_blue">#212E66</color>
+    <color name="rummy_tournament_details_text_color">#2E2588</color>
+    <color name="rummy_app_blue_dark">#0C294A</color>
+    <color name="rummy_app_blue_light">@color/rummy_app_blue</color>
+    <color name="rummy_app_blue_text">@color/rummy_app_blue</color>
+
+    <color name="rummy_color_button">@color/rummy_app_blue</color>
+    <color name="rummy_color_edit_text_line">@color/rummy_green</color>
+    <color name="rummy_color_text_view">@color/rummy_color_one</color>
+
+    <color name="rummy_highlight_font_color">@color/rummy_color_one</color>
+    <color name="rummy_colorAccent">@color/rummy_color_one</color>
+    <color name="rummy_highlight_font_scroller">@color/rummy_white</color>
+    <color name="rummy_home_bottom_font">@color/rummy_orange</color>
+
+
+
+    <color name="rummy_lobby_list_bg">@color/rummy_black</color>
+    <color name="rummy_lobby_list_text">@color/rummy_white</color>
+
+    <color name="rummy_lobby_list_join">@color/rummy_dark_grey</color>
+
+    <color name="rummy_colorPrimary">@color/rummy_black</color>
+    <color name="rummy_colorPrimaryDark">#000000</color>
+    <color name="rummy_indigo_darker">#1a4178</color>
+    <color name="rummy_indigo_darker_2">#0f2748</color>
+    <color name="rummy_yellow_color">#f5c223</color>
+    <color name="rummy_black_overlay">#66000000</color>
+    <color name="rummy_blue_color">@color/rummy_app_blue</color>
+    <color name="rummy_error_red">#F44336</color>
+    <color name="rummy_grey">#E0E0E0</color>
+    <color name="rummy_btn_green">#009600</color>
+
+    <color name="rummy_seating_text_occp">#D5d5d5</color>
+
+    <color name="rummy_grey_dark">#8a8a8a</color>
+    <color name="rummy_dark_grey">#424242</color>
+    <color name="rummy_white">#ffffff</color>
+    <color name="rummy_smokey_white">#9A9A9A</color>
+    <color name="rummy_light_green">#C5E1A5</color>
+    <color name="rummy_green">#48a92d</color>
+    <color name="rummy_dark_green">#3e5f21</color>
+    <color name="rummy_amber">#FFC107</color>
+    <color name="rummy_red">#F44336</color>
+    <color name="rummy_textColorError">#F44336</color>
+    <color name="rummy_black">#000000</color>
+    <color name="rummy_black_trans55">#8c000000</color>
+    <color name="rummy_gameScreenDividerColor">#717070</color>
+    <color name="rummy_transparent">#00000000</color>
+    <color name="rummy_black_trans85">#cc000000</color>
+    <color name="rummy_White">#ffffff</color>
+    <color name="rummy_Orange">#faaf3b</color>
+    <color name="rummy_orange">#ff9966</color>
+    <color name="rummy_colorTimerBg">#212121</color>
+    <color name="rummy_black_trans75">#bf000000</color>
+    <color name="rummy_scoreBoardbgColor">#f5f5f7</color>
+    <color name="rummy_black_gray">#3f3f3f</color>
+    <color name="rummy_grey_dark_st_bg">#222021</color>
+    <color name="rummy_black_trans50">#80000000</color>
+    <color name="rummy_meldScoreRedColor">#c32126</color>
+    <color name="rummy_meldScoreGreenColor">#b4fa1e</color>
+    <color name="rummy_WhiteSmoke">#f5f5f5</color>
+    <color name="rummy_timerBorderColor">#8adb0b</color>
+    <color name="rummy_gameScreenPointsTxtColor">#f7921e</color>
+    <color name="rummy_Green">#33ffcc</color>
+    <color name="rummy_gameDeckBorder">#80ffffff</color>
+    <color name="rummy_listViewDividerColor">#51535a</color>
+    <color name="rummy_gameRoomBottomBg">#4B000000</color>
+    <color name="rummy_black_trans80">#14000000</color>
+    <color name="rummy_Red">#ff0000</color>
+    <color name="rummy_black_trans90">#e6000000</color>
+    <color name="rummy_meldSubmittedByYouTextColor">#ed1c24</color>
+    <color name="rummy_meldSuggestedTextColor">#03953f</color>
+    <color name="rummy_yellow">#ffc125</color>
+    <color name="rummy_timerTextColor">#8eda39</color>
+    <color name="rummy_copyRightsTxtColor">#a1a09f</color>
+    <color name="rummy_white_gray">#cfcfcf</color>
+    <color name="rummy_grey_et_bg">#F2F2F2</color>
+    <color name="rummy_DarkGray">#a9a9a9</color>
+    <color name="rummy_light_blue">#E0F7FA</color>
+    <color name="rummy_pnw_blue">#141C4A</color>
+
+    <color name="rummy_hint_foreground_material_dark">#80ffffff</color>
+    <color name="rummy_hint_foreground_material_light">#80000000</color>
+    <color name="rummy_light_gray">#dfdfdf</color>
+    <color name="rummy_very_light_grey">#F5F5F5</color>
+    <color name="rummy_moreScreenBg">#ebebeb</color>
+    <color name="rummy_accent_500">#e91e63</color>
+    <color name="rummy_blue">#3C82EF</color>
+    <color name="rummy_transparent_black">#94333232</color>
+    <color name="rummy_game_room_top_bar_divider_black">#414141</color>
+    <color name="rummy_black_trans30">#4D000000</color>
+
+</resources>

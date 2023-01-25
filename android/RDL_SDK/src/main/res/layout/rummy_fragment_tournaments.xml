@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/rummy_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rummy_prelobby_bg_new"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/top_filter_bar_tourney"
+            android:visibility="gone" />
+
+        <include layout="@layout/top_bar_tournament"  />
+
+
+        <androidx.core.widget.NestedScrollView
+
+            android:id="@+id/llTournamentListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llMyTourney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvMyTourneyLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="MY JOINED TOURNAMENTS"
+                        android:textColor="@color/rummy_white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/myTourneyList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llOtherTourney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/half_fab_margin"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvOtherTourneyLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="OTHER TOURNAMENTS"
+                        android:textColor="@color/rummy_white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/tourneyList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        tools:listitem="@layout/tournament_adapter_item_new"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <TextView
+            android:id="@+id/noTournaments_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_white"
+            android:gravity="center"
+            android:text="Sorry, there aren't any tournaments planned yet!"
+            android:textColor="@color/rummy_black_gray"
+            android:textSize="22sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/tourney_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/rummy_progress_bar_new"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,169 @@
+{
+    "login_screen": {
+        "enter_your_number": "உங்கள் எண்ணை உள்ளிடவும்",
+        "get_otp": "OTP பெறுங்கல்",
+        "or": "அல்லது",
+        "enter_refer_code": "ENTER \nREFER CODE",
+        "enter_signup_code": "ENTER \nSIGNUP CODE",
+        "by_logging_in": "உள்நுழைவதன் மூலம், Dangal Games சேவை விதிமுறைகள் மற்றும்\nதனியுரிமைக் கொள்கையை நான் ஒப்புக்கொள்கிறேன் "
+    },
+    "otp_screen": {
+        "otp_has_been": "OTP {} க்கு அனுப்பப்பட்டது",
+        "change": "Change?",
+        "enter_otp": "OTP ஐ உள்ளிடவும்",
+        "resend_otp": "OTP ஐ மீண்டும் அனுப்பவும்",
+        "by_logging_in": "உள்நுழைவதன் மூலம், Dangal Games சேவை விதிமுறைகள் மற்றும்\nதனியுரிமைக் கொள்கையை நான் ஒப்புக்கொள்கிறேன் "
+    },
+    "home_screen": {
+        "add_cash_plus": "+பண...",
+        "deposit_history": "டெபாசிட் வரலாறு",
+        "withdrawal_history": "பணம் எடுத்தல் வரலாறு",
+        "change_avatar": "அவதாரத்தை மாற்றவும்",
+        "kyc": "கேஒய்சி",
+        "profile": "சுயவிவரம்",
+        "home":"ஹோமோ",
+        "wallet": "வாலட்",
+        "transactions": "பரிவர்த்தனைகள்",
+        "add_cash": "பணத்தை சேர்க்கவும்",
+        "tnc": "விதிமுறைகளும் நிபந்தனைகளும்",
+        "rsp_gaming": "பொறுப்பான  கேமிங்",
+        "pp": "தனியுரிமைக் கொள்கை",
+        "logout": "வெளியேறு",
+        "change_language": "மொழியை மாற்றவும்",
+        "support": "ஆதரவு",
+        "deals": "ஒப்பந்தங்கள் ",
+        "footer": {
+            "all_games": "அனைத்து விளையாட்டுகள்",
+            "deals": "ஒப்பந்தங்கள் ",
+            "add_cash": "பணத்தை சேர்க்கவும்",
+            "raf": "பரிந்துரைக்கவும் & சம்பாதிக்கவும்",
+            "share":"ஷேர்",
+            "home":"ஹோமோ",
+            "support": "ஆதரவு",
+            "leaderboard": "முன்னணி"
+        }
+    },
+    "all_games_screen": {
+        "sports_games": "விளையாட்டு விளையாட்டுகள்",
+        "card_games": "சீட்டாட்டம்",
+        "casual_games": "சாதாரண விளையாட்டுகள்",
+        "call_break": "கால் ப்ரேக்",
+        "pool": "பால் பூல்",
+        "poker": "போக்கர்",
+        "fantasy": "பாண்டஸி ஸ்போர்ட்ஸ்",
+        "street_racer": "ஸ்ட்ரீட்\nரேஸர்",
+        "fruit_split": "பிராய்ட் ஸ்ப்ளிட்",
+        "quiz": "QUIZ",
+        "bubble_shooter": "புப்ப்ளே\nஷூட்டர்",
+        "rummy": "ரும்மி",
+        "runner": "சுமோ\nரன்னர்",
+        "knife_hit": "நைஃப்\nஹிட்",
+        "archery": "ஆர்ச்சரி",
+        "carrom": "கேரம்",
+        "ludo": "LUDO",
+        "candy_clash": "கேண்டி\nக்ளாஷ்"
+    },
+    "profile_screen": {
+        "profile": "சுயவிவரம்",
+        "username": "Username",
+        "mobile": "Mobile",
+        "email": "Email",
+        "kyc": "கேஒய்சி",
+        "first_name": "First Name",
+        "middle_name": "Middle Name",
+        "last_name": "Last Name",
+        "as_per_pan": "(As per PAN)",
+        "date_of_birth": "Date of Birth",
+        "gender": "Gender",
+        "not_verified": "Not Verified",
+        "select": "Select",
+        "submit": "Submit",
+        "update": "Update",
+        "verify": "Verify",
+        "add": "Add"
+    },
+    "wallet_screen": {
+        "wallet": "வாலட்",
+        "withdraw_cash": "பணத்தை எடுக்கவும்",
+        "withdrawal": "பணம் எடுத்தல் ",
+        "deposit_cash": "பணத்தை டெபாசிட் செய்யவும்",
+        "add_cash": "பணத்தை சேர்க்கவும்",
+        "game_chips": "கேம் சிப்",
+        "learn_more": "மேலும் அறிக",
+        "bonus_cash": "போனஸ் பணம்",
+        "reload_coins": "நாணயங்களை மீண்டும் ஏற்றவும்",
+        "poker_chips": "போக்கர் சிப்ஸ்",
+        "transfer": "இடமாற்றம்"
+    },
+    "kyc_screen": {
+        "kyc": "கேஒய்சி",
+        "address_proof_type": "முகவரி சான்று வகை",
+        "address_proof_no": "முகவரி சான்று எண்",
+        "Address_proof_fimg": "முகவரி சான்று \nமுன்பக்கப் படம்",
+        "Address_proof_bimg": "முகவரி சான்று \nபின்பக்கப் படம்",
+        "pan_no": "PAN எண்",
+        "pan_fimg": "PAN \nமுன்பக்கப் படம்",
+        "document_status": "ஆவண நிலை: ",
+        "choose_file": "கோப்பைத் தேர்ந்தெடுக்கவும்",
+        "view_file": "கோப்பைப்...",
+        "file_must_be": "(கோப்பு {} {} MB க்கும் குறைவாக இருக்க வேண்டும்)",
+        "submit":"சமர்ப்பிக்கவும்",
+        "you_must_complete": "கேஒய்சி ஐ முடிப்பதற்கு முன் உங்கள் சுயவிவரத்தை\nநீங்கள் பூர்த்தி செய்ய வேண்டும்.",
+        "complete_profile": "சுயவிவரத்தை பூர்த்தி செய்யுங்கள்",
+        "go_back": "பின்னால் செல்லுங்கள் ",
+        "aadhaar_no": "Aadhaar எண்",
+        "voter_no": "Voter Id எண்",
+        "passport_no": "Passport File எண்",
+        "dl_no": "Driving Licence எண்"
+    },
+    "transaction_screen": {
+        "transactions": "பரிவர்த்தனைகள்",
+        "apply": "உபயோகிக்கவும்"
+    },
+    "deposit_history_screen": {
+        "deposit_history": "டெபாசிட் வரலாறு",
+        "deposit": "டெபாசிட்",
+        "apply": "உபயோகிக்கவும்"
+    },
+    "withdrawal_history_screen": {
+        "withdrawal_history": "பணம் எடுத்தல் வரலாறு",
+        "withdrawals": "பணம் எடுத்தல் ",
+        "apply": "உபயோகிக்கவும்"
+    },
+    "change_avatar_screen": {
+        "change_avatar": "அவதாரத்தை மாற்றவும்",
+        "profile": "சுயவிவரம்",
+        "avatar": "அவதாரம்",
+        "submit": "சமர்ப்பிக்கவும்"
+    },
+    "add_cash_screen": {
+        "add_cash": "பணத்தை சேர்க்கவும்",
+        "enter_amt": "தொகையை உள்ளிடவும்",
+        "proceed_to": "பணத்தை சேர்க்க தொடரவும்",
+        "have_a_promo": "விளம்பர குறியீடு உள்ளதா?"
+    },
+    "raf_screen": {
+        "raf": "பரிந்துரைக்கவும் & சம்பாதிக்கவும்",
+        "invite_friends": "நண்பர்களை அ...",
+        "or": "அல்லது",
+        "share_via": "வழியாகப் ப..."
+    },
+    "support_screen": {
+        "support": "ஆதரவு",
+        "contact_on": "தொடர்பு கொள்ளவும்"
+    },
+    "deals_screen": {
+        "deal_for_you": "உங்களுக்கான ஒப்பந்தங்கள்",
+        "deals_page": "assets/images/DealsPage_ta.png",
+        "first_deposit": "assets/images/first_deposit_ta.webp",
+        "second_deposit": "assets/images/second_deposit_ta.webp",
+        "vip": "assets/images/vip_ta.webp",
+        "know_more_blue": "assets/images/know_more_blue_ta.png",
+        "know_more_orange": "assets/images/know_more_orange_ta.png",
+        "raf": "assets/images/raf.webp"
+    },
+    "gif": {
+        "support": "assets/images/support_ta.gif",
+        "raf": "assets/images/raf_ta.gif"
+    }
+}

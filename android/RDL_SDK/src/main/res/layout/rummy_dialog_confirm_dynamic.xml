@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_confirm_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:background="@color/rummy_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/rummy_curve_edges_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:padding="@dimen/marginSizeSmall"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:gravity="center"
+            android:text="Are you sure you want to delete this bank account ?"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/yes_btn"
+                android:textColor="@color/rummy_white"
+                android:text="Yes"
+                android:gravity="center"
+                android:background="@color/rummy_color_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/no_btn"
+                android:text="No"
+                android:gravity="center"
+                android:background="@color/rummy_grey"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

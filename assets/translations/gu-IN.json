@@ -1,0 +1,169 @@
+{
+    "login_screen": {
+        "enter_your_number": "તમારો નંબર દાખલ કરો",
+        "get_otp": "OTP મેળવો",
+        "or": "અથવા",
+        "enter_refer_code": "રિફર કોડ \nદાખલ કરો",
+        "enter_signup_code": "સાઇનઅપ કોડ \nદાખલ કરો",
+        "by_logging_in": "લોગિન ઇન કરીને, હું દંગલ ગેમની સેવાની શરતો અને ગોપનીયતા નીતિ સાથે સંમત થાઉ છું"
+    },
+    "otp_screen": {
+        "otp_has_been": "{} પર OTP મોકલવામાં આવેલો છે",
+        "change": "ફેરફાર કરીએ?",
+        "enter_otp": "OTP દાખલ કરો",
+        "resend_otp": "OTP ફરી મોકલો",
+        "by_logging_in": "લોગિન ઇન કરીને, હું દંગલ ગેમની સેવાની શરતો અને ગોપનીયતા નીતિ સાથે સંમત થાઉ છું"
+    },
+    "home_screen": {
+        "add_cash_plus": "+કૅશ ઉમેરો",
+        "transactions": "વ્યવહારો",
+        "deposit_history": "જમા ઇતિહાસ",
+        "withdrawal_history": "ઉપાડ ઇતિહાસ",
+        "change_avatar": "અવતાર બદલો",
+        "kyc": "કેવાયસી",
+        "profile": "પ્રોફાઇલ",
+        "home":"હોમમાં",
+        "wallet": "વૉલેટ",
+        "add_cash": "કૅશ ઉમેરો",
+        "tnc": "નિયમો અને શરતો",
+        "rsp_gaming": "જવાબદાર ગેમિંગ",
+        "pp": "ગોપનીયતા નીતિ",
+        "logout": "લોગઆઉટ",
+        "change_language": "ભાષા બદલો",
+        "support": "સપોર્ટ કરો",
+        "deals": "ડિલ્સ",
+        "footer": {
+            "all_games": "તમામ ગેમ્સ",
+            "deals": "ડિલ્સ",
+            "add_cash": "કૅશ ઉમેરો",
+            "share":"સહારે",
+            "home":"હોમમાં",
+            "raf": "રિફર કરો અને કમાઓ",
+            "support": "સપોર્ટ કરો",
+            "leaderboard": "લીડરબોર્ડ"
+        }
+    },
+    "all_games_screen": {
+        "sports_games": "સ્પોર્ટ્સ રમતો",
+        "card_games": "કાર્ડ રમતો",
+        "casual_games": "કેઝ્યુઅલ રમતો",
+        "call_break": "કોલ બ્રેક",
+        "pool": "બોલ પૂલ",
+        "poker": "પોકર",
+        "fantasy": "ફૅન્ટેસી સ્પોર્ટ્સ",
+        "street_racer": "સ્ટ્રીટ રેસર",
+        "fruit_split": "ફ્રૂટ સ્પ્લિટ",
+        "quiz": "QUIZ",
+        "bubble_shooter": "બબલ\nશૂટર",
+        "rummy": "રમી",
+        "runner": "સુમો રનર",
+        "knife_hit": "નાઈફ હિટ",
+        "archery": "આર્ચરી",
+        "carrom": "કેરમ",
+        "ludo": "LUDO",
+        "candy_clash": "કેન્ડી ક્લેશ"
+    },
+    "profile_screen": {
+        "profile": "પ્રોફાઇલ",
+        "username": "યુઝરનેમ",
+        "mobile": "મોબાઇલ",
+        "email": "ઇમેલ",
+        "kyc": "કેવાયસી",
+        "first_name": "પ્રથમ નામ",
+        "middle_name": "મધ્ય નામ",
+        "last_name": "અંતિમ નામ",
+        "as_per_pan": "(પાન કાર્ડ મુજબ)",
+        "date_of_birth": "જન્મ તારીખ",
+        "gender": "જાતિ",
+        "not_verified": "ચકાસાયેલ નથી",
+        "select": "પસંદ કરો",
+        "submit": "સબમિટ કરો",
+        "update": "અપડેટ કરો",
+        "verify": "ચકાસો",
+        "add": "ઉમેરો"
+    },
+    "wallet_screen": {
+        "wallet": "વૉલેટ",
+        "withdraw_cash": "કૅશ ઉપાડો",
+        "withdrawal": "ઉપાડ",
+        "deposit_cash": "કૅશ જમા કરો",
+        "add_cash": "કૅશ ઉમેરો",
+        "game_chips": "ગેમ ચિપ",
+        "learn_more": "વધુ જાણો",
+        "bonus_cash": "બોનસ કૅશ",
+        "reload_coins": "કોઇન રિલોડ કરો",
+        "poker_chips": "પોકર ચિપ્સ",
+        "transfer": "ટ્રાન્સફર"
+    },
+    "kyc_screen": {
+        "kyc": "કેવાયસી",
+        "address_proof_type": "સરનામાનો પુરાવાનો પ્રકાર",
+        "address_proof_no": "સરનામાનો પુરાવાનો નંબર",
+        "Address_proof_fimg": "સરનામાના પુરાવાની \nઆગળની બાજુની તસવીર",
+        "Address_proof_bimg": "સરનામાના પુરાવાની \nપાછળની બાજુની તસવીર",
+        "pan_no": "પાન કાર્ડની નંબર",
+        "pan_fimg": "પાન કાર્ડની \nઆગળની બાજુની તસવીર",
+        "document_status": "ડોક્યુમેન્ટની સ્થિતિ: ",
+        "choose_file": "ફાઇલ પસંદ કરો",
+        "view_file": "ફાઇલ જૂઓ",
+        "file_must_be": "(ફાઇલ {} ફોર્મેટમાં હોવી જોઇએ, {} MB કરતા ઓછી)",
+        "submit":"સબમિટ કરો",
+        "you_must_complete": "KYC કરતા પહેલા તમારે તમારી પ્રોફાઇલ\nપૂર્ણ કરેલી હોવી જોઇએ.",
+        "complete_profile": "પ્રોફાઇલ પૂર્ણ કરો",
+        "go_back": "પાછા જાઓ",
+        "aadhaar_no": "આધાર નંબર",
+        "voter_no": "મતદાન ઓળખકાર્ડ નંબર",
+        "passport_no": "પાસપોર્ટ નંબર",
+        "dl_no": "ડ્રાઇવિંગ લાઇસન્સ નંબર"
+    },
+    "transaction_screen": {
+        "transactions": "વ્યવહારો",
+        "apply": "લાગુ કરો"
+    },
+    "deposit_history_screen": {
+        "deposit_history": "જમા ઇતિહાસ",
+        "deposit": "જમા",
+        "apply": "લાગુ કરો"
+    },
+    "withdrawal_history_screen": {
+        "withdrawal_history": "ઉપાડ ઇતિહાસ",
+        "withdrawals": "ઉપાડ",
+        "apply": "લાગુ કરો"
+    },
+    "change_avatar_screen": {
+        "change_avatar": "અવતાર બદલો",
+        "profile": "પ્રોફાઇલ",
+        "avatar": "અવતાર",
+        "submit": "સબમિટ કરો"
+    },
+    "add_cash_screen": {
+        "add_cash": "કૅશ ઉમેરો",
+        "enter_amt": "રકમ દાખલ કરો",
+        "proceed_to": "કૅશ ઉમેરવા આગળ વધો",
+        "have_a_promo": "શું આપની પાસે પ્રૉમો કોડ છે?"
+    },
+    "raf_screen": {
+        "raf": "રિફર કરો અને કમાઓ",
+        "invite_friends": "મિત્રોને આમંત્રિત કરો",
+        "or": "અથવા",
+        "share_via": "દ્વારા શેર કરો"
+    },
+    "support_screen": {
+        "support": "સપોર્ટ કરો",
+        "contact_on": "ઉપર સંપર્ક કરો"
+    },
+    "deals_screen": {
+        "deal_for_you": "તમારા માટે ડિલ",
+        "deals_page": "assets/images/DealsPage_gu.png",
+        "first_deposit": "assets/images/first_deposit_gu.webp",
+        "second_deposit": "assets/images/second_deposit_gu.webp",
+        "vip": "assets/images/vip_gu.webp",
+        "know_more_blue": "assets/images/know_more_blue_gu.png",
+        "know_more_orange": "assets/images/know_more_orange_gu.png",
+        "raf": "assets/images/raf.webp"
+    },
+    "gif": {
+        "support": "assets/images/support_gu.gif",
+        "raf": "assets/images/raf_gu.gif"
+    }
+}

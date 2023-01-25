@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/rummy_white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/rummy_gameScreenDividerColor"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/score_board_item_height"
+        android:layout_weight="1.0"
+        android:id="@+id/llContainer"
+        android:gravity="center"
+        android:background="@color/rummy_white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marginSizeMicro"
+        android:paddingTop="@dimen/marginSizeMicro">
+
+        <TextView
+            android:id="@+id/sb_game_no_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:textColor="@color/rummy_black_gray" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_gameScreenDividerColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sb_player_1_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:textColor="@color/rummy_black_gray" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_gameScreenDividerColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sb_player_2_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:textColor="@color/rummy_black_gray" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_gameScreenDividerColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sb_player_3_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:textColor="@color/rummy_black_gray" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_gameScreenDividerColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sb_player_4_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:textColor="@color/rummy_black_gray" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_gameScreenDividerColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sb_player_5_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:textColor="@color/rummy_black_gray" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_gameScreenDividerColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sb_player_6_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:textColor="@color/rummy_black_gray" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/rummy_gameScreenDividerColor"
+        android:visibility="invisible" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/buyInMargin"
+        android:layout_marginTop="@dimen/buyInMargin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/game_top_bar_img_height_width"
+            android:layout_height="@dimen/game_top_bar_img_height_width"
+            android:src="@drawable/rummy_prize"/>
+
+        <TextView
+            android:id="@+id/winner_name"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:textColor="@color/rummy_black"
+            android:textSize="@dimen/settingsViewTitleTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/game_top_bar_img_height_width"
+            android:layout_height="@dimen/game_top_bar_img_height_width"
+            android:src="@drawable/rummy_cash_icon_tourney_result"/>
+        <TextView
+            android:id="@+id/prize_money_tv"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:textColor="@color/rummy_black"
+            android:textSize="@dimen/settingsViewTitleTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

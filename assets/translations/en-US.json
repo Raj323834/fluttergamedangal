@@ -1,0 +1,169 @@
+{
+    "login_screen": {
+        "enter_your_number": "ENTER YOUR NUMBER",
+        "get_otp": "GET OTP",
+        "or": "OR",
+        "enter_refer_code": "ENTER \nREFER CODE",
+        "enter_signup_code": "ENTER \nSIGNUP CODE",
+        "by_logging_in": "By logging in, I agree to Dangal Games Terms of Service and Privacy Policy"
+    },
+    "otp_screen": {
+        "otp_has_been": "OTP has been sent to {}",
+        "change": "Change?",
+        "enter_otp": "ENTER OTP",
+        "resend_otp": "RESEND OTP",
+        "by_logging_in": "By logging in, I agree to Dangal Games Terms of Service and Privacy Policy"
+    },
+    "home_screen": {
+        "add_cash_plus": "+ADD CASH",
+        "transactions": "Transactions",
+        "deposit_history": "Deposit History",
+        "withdrawal_history": "Withdrawal History",
+        "change_avatar": "Change Avatar",
+        "kyc": "KYC",
+        "profile": "Profile",
+        "home":"Home",
+        "wallet": "Wallet",
+        "add_cash": "Add Cash",
+        "tnc": "Terms and Conditions",
+        "rsp_gaming": "Responsible Gaming",
+        "pp": "Privacy Policy",
+        "logout": "Logout",
+        "change_language": "Change Language",
+        "support": "Support",
+        "deals": "Deals",
+        "footer": {
+            "all_games": "All Games",
+            "home":"Home",
+            "deals": "Deals",
+            "share":"Share",
+            "add_cash": "Add Cash",
+            "raf": "Refer & Earn",
+            "support": "Support",
+            "leaderboard": "Leaderboard"
+        }
+    },
+    "all_games_screen": {
+        "sports_games": "Sports Games",
+        "card_games": "Card Games",
+        "casual_games": "Casual Games",
+        "call_break": "CALL BREAK",
+        "pool": "POOL",
+        "poker": "POKER",
+        "fantasy": "FANTASY SPORTS",
+        "street_racer": "STREET RACER",
+        "fruit_split": "FRUIT SPLIT",
+        "quiz": "QUIZ",
+        "bubble_shooter": "BUBBLE\nSHOOTER",
+        "rummy": "RUMMY",
+        "runner": "RUNNER",
+        "knife_hit": "KNIFE HIT",
+        "archery": "ARCHERY",
+        "carrom": "CARROM",
+        "ludo": "LUDO",
+        "candy_clash": "CANDY CLASH"
+    },
+    "profile_screen": {
+        "profile": "Profile",
+        "username": "Username",
+        "mobile": "Mobile",
+        "email": "Email",
+        "kyc": "KYC",
+        "first_name": "First Name",
+        "middle_name": "Middle Name",
+        "last_name": "Last Name",
+        "as_per_pan": "(As per PAN)",
+        "date_of_birth": "Date of Birth",
+        "gender": "Gender",
+        "not_verified": "Not Verified",
+        "select": "Select",
+        "submit": "Submit",
+        "update": "Update",
+        "verify": "Verify",
+        "add": "Add"
+    },
+    "wallet_screen": {
+        "wallet": "Wallet",
+        "withdraw_cash": "Withdraw Cash",
+        "withdrawal": "Withdrawal",
+        "deposit_cash": "Deposit Cash",
+        "add_cash": "Add Cash",
+        "game_chips": "Game Chips",
+        "learn_more": "Learn More",
+        "bonus_cash": "Bonus Cash",
+        "reload_coins": "Reload Coins",
+        "poker_chips": "Poker Chips",
+        "transfer": "Transfer"
+    },
+    "kyc_screen": {
+        "kyc": "KYC",
+        "address_proof_type": "Address Proof Type",
+        "address_proof_no": "Address Proof Number",
+        "Address_proof_fimg": "Address Proof \nFront Image",
+        "Address_proof_bimg": "Address Proof \nBack Image",
+        "pan_no": "PAN Number",
+        "pan_fimg": "PAN \nFront Image",
+        "document_status": "Document status: ",
+        "choose_file": "Choose File",
+        "view_file": "View file",
+        "file_must_be": "(File must be {} less than {} MB)",
+        "submit":"Submit",
+        "you_must_complete": "You must complete your Profile\nbefore doing KYC.",
+        "complete_profile": "Complete Profile",
+        "go_back": "Go back",
+        "aadhaar_no": "Aadhaar Number",
+        "voter_no": "Voter Id Number",
+        "passport_no": "Passport File Number",
+        "dl_no": "Driving Licence Number"
+    },
+    "transaction_screen": {
+        "transactions": "Transactions",
+        "apply": "Apply"
+    },
+    "deposit_history_screen": {
+        "deposit_history": "DEPOSIT HISTORY",
+        "deposit": "Deposit",
+        "apply": "Apply"
+    },
+    "withdrawal_history_screen": {
+        "withdrawal_history": "WITHDRAWAL HISTORY",
+        "withdrawals": "Withdrawals",
+        "apply": "Apply"
+    },
+    "change_avatar_screen": {
+        "change_avatar": "CHANGE AVATAR",
+        "profile": "PROFILE",
+        "avatar": "AVATAR",
+        "submit": "Submit"
+    },
+    "add_cash_screen": {
+        "add_cash": "ADD CASH",
+        "enter_amt": "Enter Amount",
+        "proceed_to": "Proceed to Add Cash",
+        "have_a_promo": "Have a Promo Code?"
+    },
+    "raf_screen": {
+        "raf": "REFER & EARN",
+        "invite_friends": "Invite Friends",
+        "or": "OR",
+        "share_via": "Share via"
+    },
+    "support_screen": {
+        "support": "Support",
+        "contact_on": "Contact on"
+    },
+    "deals_screen": {
+        "deal_for_you": "Deals for You",
+        "deals_page": "assets/images/DealsPage.png",
+        "first_deposit": "assets/images/first_deposit.webp",
+        "second_deposit": "assets/images/second_deposit.webp",
+        "vip": "assets/images/vip.webp",
+        "know_more_blue": "assets/images/know_more_blue.png",
+        "know_more_orange": "assets/images/know_more_orange.png",
+        "raf": "assets/images/raf.webp"
+    },
+    "gif": {
+        "support": "assets/images/support.gif",
+        "raf": "assets/images/raf.gif"
+    }
+}

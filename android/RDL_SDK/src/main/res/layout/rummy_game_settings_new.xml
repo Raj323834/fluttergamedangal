@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gameSettingsViewWidth"
+    android:layout_height="match_parent"
+    android:background="@color/rummy_White"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/rummy_grey_et_bg"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/settingsCloseBtnSize"
+            android:layout_height="@dimen/settingsCloseBtnSize"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/marginSizeMicroPlus"
+            android:src="@drawable/rummy_gamesettings_black" />
+
+        <in.glg.rummy.view.RummyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_settings"
+            android:gravity="center"
+            android:padding="@dimen/paddingSizeMediumPlus"
+            android:textStyle="bold"
+            android:textColor="@color/rummy_black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/pop_up_close_btn"
+            android:layout_width="@dimen/settingsCloseBtnSize"
+            android:layout_height="@dimen/settingsCloseBtnSize"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/marginSizeMicroPlus"
+            android:src="@drawable/rummy_close_inner_gr" />
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:padding="@dimen/fab_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginSizeSmall"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <in.glg.rummy.view.RummyTextView
+                    android:layout_width="@dimen/settingsInfoTextSize"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Sounds"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/settingsInfoTextSize" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:background="@drawable/rummy_rounded_oval_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1.0">
+
+                        <Button
+                            android:id="@+id/sounds_on_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/score_board_item_height"
+                            android:layout_weight="0.5"
+                            android:background="@color/rummy_transparent"
+                            android:textColor="@color/rummy_White"
+                            android:textSize="@dimen/settingsInfoTextSize"
+                            android:textAllCaps="false"
+                            android:text="On"
+                             />
+
+                        <Button
+                            android:id="@+id/sounds_off_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/score_board_item_height"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rummy_rounded_oval_border_dark_grey"
+                            android:text="Off"
+                            android:textAllCaps="false"
+                            android:textColor="@color/rummy_White"
+                            android:textSize="@dimen/settingsInfoTextSize"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginSizeSmall"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <in.glg.rummy.view.RummyTextView
+                    android:layout_width="@dimen/settingsInfoTextSize"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Vibrations"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/settingsInfoTextSize" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:background="@drawable/rummy_rounded_oval_border"
+                        android:orientation="horizontal"
+                        android:weightSum="1.0">
+
+                        <Button
+                            android:id="@+id/vibration_on_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/score_board_item_height"
+                            android:layout_weight="0.5"
+                            android:background="@color/rummy_transparent"
+                            android:text="On"
+                            android:textAllCaps="false"
+                            android:textColor="@color/rummy_White"
+                            android:textSize="@dimen/settingsInfoTextSize"
+                            android:textStyle="normal" />
+
+                        <Button
+                            android:id="@+id/vibration_off_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/score_board_item_height"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/rummy_rounded_oval_border_dark_grey"
+                            android:text="Off"
+                            android:textAllCaps="false"
+                            android:textColor="@color/rummy_White"
+                            android:textSize="@dimen/settingsInfoTextSize"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <in.glg.rummy.view.RummyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginSizeSmallPlus"
+            android:paddingTop="@dimen/buyInMargin"
+            android:text="Disconnected For Longer Duration?"
+            android:textColor="@color/rummy_Orange"
+            android:textSize="@dimen/settingsInfoTextSize"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginSizeSmall"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.35"
+                android:text="Pool Rummy"
+                android:textColor="@color/rummy_White"
+                android:textSize="@dimen/settingsInfoTextSize" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:background="@drawable/rummy_rounded_rect_border">
+
+                <Spinner
+                    android:id="@+id/pools_rummy_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_White" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginSizeSmall"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.35"
+                android:text="Points Rummy"
+                android:textColor="@color/rummy_White"
+                android:textSize="@dimen/settingsInfoTextSize" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:background="@drawable/rummy_rounded_rect_border">
+
+                <Spinner
+                    android:id="@+id/points_rummy_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_White" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

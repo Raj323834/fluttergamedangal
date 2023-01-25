@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gameSettingsViewWidth"
+    android:layout_height="match_parent"
+    android:background="@color/rummy_black_trans85"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/rummy_grey_et_bg"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/settingsCloseBtnSize"
+            android:layout_height="@dimen/settingsCloseBtnSize"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/marginSizeMicroPlus"
+            android:src="@drawable/rummy_game_info_black" />
+
+        <in.glg.rummy.view.RummyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_info"
+            android:gravity="center"
+            android:padding="@dimen/paddingSizeMediumPlus"
+            android:textStyle="bold"
+            android:textColor="@color/rummy_black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/pop_up_close_btn"
+            android:layout_width="@dimen/settingsCloseBtnSize"
+            android:layout_height="@dimen/settingsCloseBtnSize"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/marginSizeMicroPlus"
+            android:src="@drawable/rummy_close_inner_gr" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/fab_margin"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:background="@color/rummy_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_variant"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/game_info_game_variant_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lobby_game_type_title"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/game_info_game_type_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_table_id"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/game_info_table_id_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_game_id"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/game_info_game_id_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_entry_fee"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/entry_fee_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_first_drop"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/first_drop_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_middle_drop"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/middle_drop_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_full_count"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/full_count_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_move_time"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/move_time_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_auto_extra_time"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/extra_time_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:layout_marginBottom="@dimen/paddingSizeSmallPlus"
+            android:background="@color/rummy_grey_et_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_max_extra_time_move"
+                android:textColor="@color/rummy_black"
+                android:layout_weight="1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/rummy_black"
+                android:layout_weight=".1"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <in.glg.rummy.view.RummyTextView
+                android:id="@+id/max_time_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/dropDownImageSize"
+                android:layout_height="@dimen/dropDownImageSize"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/rummy_green_circle"/>
+            <in.glg.rummy.view.RummyTextView
+                android:textColor="@color/rummy_gameScreenDividerColor"
+                android:layout_width="match_parent"
+                android:paddingLeft="3dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="@string/game_info_img_feature_header" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/marginSizeSmall"
+            android:paddingLeft="@dimen/marginSizeSmall"
+            android:paddingRight="@dimen/marginSizeSmall"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/rummy_ai_game_result"/>
+
+                <in.glg.rummy.view.RummyTextView
+                    android:textColor="@color/rummy_black"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/paddingSizeSmallPlus"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_info_player_protection" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/rummy_sc_meld"/>
+
+                <in.glg.rummy.view.RummyTextView
+                    android:textColor="@color/rummy_black"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/paddingSizeSmallPlus"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_info_smart_correction" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight=".7"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/rummy_autoplay_icon"/>
+
+                <in.glg.rummy.view.RummyTextView
+                    android:textColor="@color/rummy_black"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/paddingSizeSmallPlus"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_info_auto_play" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

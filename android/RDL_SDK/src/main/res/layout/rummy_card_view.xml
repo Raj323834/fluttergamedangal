@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/openDeckWidth"
+    android:id="@+id/ll_cardview_main_container"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/card_view_root_layout"
+        android:layout_width="@dimen/stackCardWidth"
+        android:layout_height="@dimen/stackCardHeight"
+        android:layout_marginTop="@dimen/marginSizeSmall"
+        android:clipChildren="false">
+
+        <ImageView
+            android:id="@+id/cardImageView"
+            android:layout_width="@dimen/stackCardWidth"
+            android:layout_height="@dimen/stackCardHeight"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/jokerCardImg"
+            android:layout_width="@dimen/jokerCardWidthHeight"
+            android:layout_height="@dimen/jokerCardWidthHeight"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/cardStackJokerCardMarginBottom"
+            android:layout_marginLeft="@dimen/jokerCardMarginLeft"
+            android:src="@drawable/jocker_card_img"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/cardImageViewSelected"
+            android:layout_width="@dimen/stackCardWidth"
+            android:layout_height="@dimen/stackCardHeight"
+            android:scaleType="fitXY"
+            android:src="@drawable/rummy_selected_card"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/autoPlayIv"
+            android:layout_width="@dimen/autoPlayIconSize"
+            android:layout_height="@dimen/autoPlayIconSize"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/autoPlayIconMarginLeft"
+            android:layout_marginTop="@dimen/autoPlayIconMarginTop"
+            android:src="@drawable/rummy_autoplay_icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

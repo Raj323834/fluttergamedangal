@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/game_reslult_header_height"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marginSizeMicro"
+        android:paddingTop="@dimen/marginSizeMicro"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/game_results_name_header"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/textSizeMicro"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="|"
+            android:visibility="invisible"
+            android:textColor="@color/rummy_white"
+            android:textSize="@dimen/textSizeLarge"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/game_results_result_header"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/textSizeMicro"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="|"
+            android:visibility="invisible"
+            android:textColor="@color/rummy_white"
+            android:textSize="@dimen/textSizeLarge"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/game_results_show_cards_header"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/textSizeMicro"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="|"
+            android:visibility="invisible"
+            android:textColor="@color/rummy_white"
+            android:textSize="@dimen/textSizeLarge"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/game_results_count_header"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/textSizeMicro" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="|"
+            android:visibility="invisible"
+            android:textColor="@color/rummy_white"
+            android:textSize="@dimen/textSizeLarge"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:gravity="center"
+                android:text="@string/game_results_total_count_header"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/textSizeMicro"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rummy_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/rummy_curve_edges_filled_app_blue_dark_flat_bottom_less_round"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginSizeSmall"
+                android:text="@string/joker_title_txt"
+                android:textColor="@color/rummy_white" />
+
+            <ImageView
+                android:id="@+id/game_jocker_iv"
+                android:layout_width="@dimen/gameResultsJockerWidth"
+                android:layout_height="@dimen/popUpCloseBtnSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/marginSizeSmall"
+                android:src="@drawable/jocker_c1" />
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="@dimen/gameResultsJockerWidth"
+                android:layout_height="@dimen/popUpCloseBtnSize"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/rummy_result_close_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="@dimen/popUpCloseBtnSize"
+                android:visibility="invisible"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="GAME RESULTS"
+                android:textStyle="bold"
+                android:textColor="@color/rummy_white"
+                android:textSize="@dimen/settingsViewTitleTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/split_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popUpCloseBtnSize"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingSizeSmall"
+                android:text="Do you want to split the prize money ? "
+                android:textColor="@color/rummy_white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/split_btn"
+                android:layout_width="@dimen/popUpCloseBtnSize"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rummy_declare" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/rummy_white"
+                android:textSize="12sp"
+                android:text="Game ID:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/game_id_tv"
+                android:textColor="@color/rummy_white"
+                android:layout_marginLeft="4dp"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/rummy_white"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/fab_margin"></View>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/rummy_white"
+                android:textSize="12sp"
+                android:text="Table ID:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/table_id_tv"
+                android:textColor="@color/rummy_white"
+                android:layout_marginLeft="4dp"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/rummy_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/rummy_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rummy_grey_et_bg">
+                <include layout="@layout/rummy_game_results_header" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/game_results_lv"
+                android:background="@color/rummy_transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/rummy_black"
+                android:dividerHeight="0.5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/game_timer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/game_reslult_header_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@color/rummy_colorPrimary"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/rummy_white"
+            android:textSize="@dimen/textSizeMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/versionNumber_gs"
+            android:textSize="10sp"
+            android:textColor="@color/rummy_smokey_white"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textSize="11sp"
+            android:textColor="@color/rummy_white"
+            android:text="Leave Table"
+            android:id="@+id/btn_leave_table_game_result"
+            android:stateListAnimator="@null"
+            android:background="@drawable/rummy_btn_blue_square_less_corner_selector_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/lobby_back_btn_width"
+            android:layout_height="@dimen/game_reslult_header_height"/>
+
+    </RelativeLayout>
+</LinearLayout>

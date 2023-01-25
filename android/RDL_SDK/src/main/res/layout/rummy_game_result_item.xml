@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/rummy_white"
+    android:id="@+id/llContainer"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/player_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="test name"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/textSizeMicro" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ai_iv"
+                        android:layout_width="@dimen/sc_game_results_iv_size"
+                        android:layout_height="@dimen/sc_game_results_iv_size"
+                        android:src="@drawable/rummy_ai_game_result"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/sc_iv"
+                        android:layout_width="@dimen/sc_game_results_iv_size"
+                        android:layout_height="@dimen/sc_game_results_iv_size"
+                        android:src="@drawable/rummy_sc_meld"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/player_status_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/marginSizeMicro"
+                    android:layout_toRightOf="@+id/ai_iv"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeMicro" />
+
+                <ImageView
+                    android:id="@+id/iv_winner_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:src="@drawable/rummy_winner_icon_new"
+                    android:layout_marginLeft="@dimen/marginSizeMicro"
+                    android:layout_toRightOf="@+id/ai_iv"
+                    android:maxLines="1"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeMicro" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <in.glg.rummy.view.RummyView
+                android:id="@+id/player_cards_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/game_results_waiting_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/loading_pb_dimesions"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Waiting..."
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/textSizeMicro"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/player_count_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:gravity="center"
+            android:textColor="@color/rummy_black"
+            android:textSize="@dimen/textSizeMicro" />
+
+        <TextView
+            android:id="@+id/player_total_count_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:textColor="@color/rummy_black"
+            android:textSize="@dimen/textSizeMicro" />
+
+    </LinearLayout>
+
+</LinearLayout>

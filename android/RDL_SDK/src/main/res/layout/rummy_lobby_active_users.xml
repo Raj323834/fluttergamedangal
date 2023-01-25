@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="30dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/user_5"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/rummy_lobby_player_on" />
+
+    <ImageView
+        android:id="@+id/user_4"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rummy_lobby_player_on" />
+
+    <ImageView
+        android:id="@+id/table_iv"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/user_5"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/user_5"
+        android:src="@drawable/rummy_six_player_six_live" />
+
+    <ImageView
+        android:id="@+id/user_3"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/user_5"
+        android:layout_toRightOf="@+id/table_iv"
+        android:src="@drawable/rummy_lobby_player_on" />
+
+    <ImageView
+        android:id="@+id/user_1"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        android:layout_below="@+id/table_iv"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rummy_lobby_player_off" />
+
+    <ImageView
+        android:id="@+id/user_2"
+        android:layout_width="5dp"
+        android:visibility="gone"
+        android:layout_height="5dp"
+        android:layout_alignTop="@+id/user_6"
+        android:layout_toRightOf="@+id/table_iv"
+        android:src="@drawable/rummy_lobby_player_off" />
+
+    <ImageView
+        android:id="@+id/user_6"
+        android:layout_width="5dp"
+        android:visibility="gone"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/user_5"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/rummy_lobby_player_off" />
+</RelativeLayout>

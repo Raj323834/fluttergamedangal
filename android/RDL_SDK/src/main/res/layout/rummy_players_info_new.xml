@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/rummy_transparent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:id="@+id/rl_cash_prize_label"
+            android:background="@drawable/rummy_tourney_bottom_menu_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cash_prize_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash Prizes"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                />
+
+            <ImageView
+                android:id="@+id/cash_prize_arraw_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginSizeSmallPlus"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/rummy_arrow_right_black"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/llPrizeListContent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/rummy_grey_et_bg"
+                android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Position"
+                    android:id="@+id/positionLabel_tv"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeMedium" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Player"
+                    android:visibility="gone"
+                    android:id="@+id/playerLabel_tv"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeMedium" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/prizeAmountLabel_tv"
+                    android:text="Prize"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeMedium" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/prizeList"
+                android:layout_marginTop="@dimen/marginSizeMicro"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/rummy_smokey_white"
+                android:dividerHeight="0.5dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/rl_joined_player_label"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:background="@drawable/rummy_tourney_bottom_menu_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/joined_player_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                android:gravity="center_vertical"
+                android:text="Joined Players"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize" />
+
+            <ImageView
+                android:id="@+id/joined_player_arraw_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginSizeSmallPlus"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/rummy_arrow_right_black"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/llJoinedPlayerContent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/rummy_grey_et_bg"
+                android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Sr. No."
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeMedium" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Player Username"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeMedium" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/joinedPlayersList"
+                android:layout_marginTop="@dimen/marginSizeMicro"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/rummy_smokey_white"
+                android:dividerHeight="0.5dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/rl_waitlist_label"
+            android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+            android:background="@drawable/rummy_tourney_bottom_menu_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/waitlist_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waitlist"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/moreInofTextSize"
+                android:layout_marginLeft="@dimen/marginSizeSmallPlus"
+                />
+
+            <ImageView
+                android:id="@+id/waitilist_arraw_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginSizeSmallPlus"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/rummy_arrow_right_black"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/llWaitlistContent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/rummy_grey_et_bg"
+                android:layout_marginTop="@dimen/paddingSizeSmallPlus"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Sr. No."
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeMedium" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Player Username"
+                    android:textColor="@color/rummy_black"
+                    android:textSize="@dimen/textSizeMedium" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/waitingPlayersList"
+                android:layout_marginTop="@dimen/marginSizeMicro"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/rummy_smokey_white"
+                android:dividerHeight="0.5dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!--Older Layout-->
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/half_fab_margin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/joinedPlayers_tv"
+                android:text="Joined Players"
+                android:textColor="@color/rummy_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="S. No."
+                    android:textSize="11sp"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:text="Player Username"
+                    android:textSize="11sp"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/rummy_smokey_white"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/half_fab_margin"></View>
+
+        </LinearLayout>
+
+        <ListView
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/rummy_transparent"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/rummy_white"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/half_fab_margin"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/waitingPlayers_tv"
+                    android:text="Waiting Players"
+                    android:textColor="@color/rummy_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="S. No."
+                        android:textSize="11sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:text="Player Username"
+                        android:textSize="11sp"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/rummy_smokey_white"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/half_fab_margin"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8">
+
+                    <ListView
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/rummy_transparent"
+                        android:dividerHeight="1dp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/half_fab_margin"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/register_btn_players"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/rummy_white"
+                android:background="@color/rummy_color_one"/>
+            <Button
+                android:id="@+id/deregister_btn_players"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Deregister"
+                android:textAllCaps="false"
+                android:textColor="@color/rummy_white"
+                android:background="@color/rummy_color_one"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

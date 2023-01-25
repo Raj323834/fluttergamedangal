@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/rummy_White"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@drawable/rummy_curve_edges_filled_app_blue_dark_flat_bottom_less_round"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:visibility="invisible"
+                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/paddingSizeSmall"
+                    android:text="Meld your cards"
+                    android:textColor="@color/rummy_White"
+                    android:textSize="@dimen/settingsViewTitleTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/rummy_White"
+                    android:textSize="12sp"
+                    android:text="Game ID:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/game_id_tv"
+                    android:textColor="@color/rummy_White"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:background="@color/rummy_White"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/fab_margin"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/rummy_White"
+                    android:textSize="12sp"
+                    android:text="Table ID:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/table_id_tv"
+                    android:textColor="@color/rummy_White"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/marginSizeExtraLarge"
+                android:gravity="center|right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/marginSizeSmall"
+                    android:alpha="0.8"
+                    android:gravity="center"
+                    android:text="@string/joker_title_txt"
+                    android:textColor="@color/rummy_White" />
+
+                <ImageView
+                    android:id="@+id/game_jocker_iv"
+                    android:layout_width="@dimen/gameResultsJockerWidth"
+                    android:layout_height="@dimen/popUpCloseBtnSize"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/fab_margin" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:gravity="center">
+
+            <in.glg.rummy.view.RummyMeldView
+                android:id="@+id/meld_meld_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center" />
+
+            <in.glg.rummy.view.RummyView
+                android:id="@+id/meld_rummy_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/invalid_show_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginSizeMicro"
+                android:layout_marginBottom="@dimen/marginSizeMicro"
+                android:gravity="center"
+                android:text="Invalid Show - Pure sequence is missing"
+                android:textColor="@color/rummy_red"
+                android:visibility="invisible"
+                android:textSize="@dimen/settingsViewTitleTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginSizeMicro"
+                android:gravity="center"
+                android:text="Are you sure you want to continue ?"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/settingsViewTitleTextSize" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/meld_yes_btn"
+                    android:layout_width="@dimen/meld_screen_btn_width"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textStyle="bold"
+                    android:text="Yes"
+                    android:textAllCaps="false"
+                    android:background="@color/rummy_color_button"
+                    android:textColor="@color/rummy_white" />
+
+                <Button
+                    android:id="@+id/meld_cancel_btn"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:layout_width="@dimen/meld_screen_btn_width"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:text="Cancel"
+                    android:layout_toRightOf="@+id/meld_yes_btn"
+                    android:background="@color/rummy_grey"
+                    android:textColor="@color/rummy_black_gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/game_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="bottom|center"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Please send your cards :"
+                android:textColor="@color/rummy_black"
+                android:textSize="@dimen/settingsViewTitleTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/declare_ai_widh_height"
+        android:layout_height="@dimen/declare_ai_widh_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/rummy_ai" />
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="@dimen/popUpCloseBtnSize"
+        android:layout_height="@dimen/popUpCloseBtnSize"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/buyInMargin"
+        android:scaleType="fitXY"
+        android:src="@drawable/rummy_result_close_icon" />
+
+    <TextView
+        android:id="@+id/versionNumber_ms"
+        android:textSize="10sp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

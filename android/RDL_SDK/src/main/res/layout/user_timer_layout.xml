@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rummy_rounded_rect_red"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/timer_root_layout"
+        android:layout_width="@dimen/userTimerWidth"
+        android:layout_height="@dimen/userTimerHeight"
+        android:layout_centerVertical="true"
+        android:visibility="visible">
+
+        <in.glg.rummy.view.RummyTimerTextView
+            android:id="@+id/player_timer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="60"
+            android:textColor="@color/rummy_green"
+            android:textSize="@dimen/timerTextSize"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

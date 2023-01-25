@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="10dp"
+    android:paddingLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:padding="@dimen/paddingSizeMicro"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/rummy_prize_icon_tourney_result"/>
+
+        <TextView
+            android:paddingLeft="2dp"
+            android:id="@+id/nickName_tv"
+            android:gravity="center_vertical|left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/rummy_black"
+            android:textSize="@dimen/moreInofTextSize"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"/>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/rummy_cash_icon_tourney_result"/>
+
+        <TextView
+            android:paddingLeft="2dp"
+            android:id="@+id/prize_tv"
+            android:layout_width="0dp"
+            android:textSize="@dimen/moreInofTextSize"
+            android:textColor="@color/rummy_black"
+            android:textStyle="bold"
+            android:gravity="center_vertical|left"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+<!--
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/half_fab_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/rummy_curve_edges_primary_color_hollow"
+        android:padding="@dimen/half_fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nickName_tv"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"/>
+
+        <View
+            android:background="@color/rummy_colorPrimary"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:id="@+id/prize_tv"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+</LinearLayout>-->

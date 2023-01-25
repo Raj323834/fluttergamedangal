@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/rummy_header" />
+
+    <LinearLayout
+        android:background="@drawable/rummy_lobby_filter_bg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ll_filter_all"
+            android:background="@color/rummy_transparent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_filter_all"
+                android:textAllCaps="true"
+                android:textColor="@color/rummy_yellow"
+                android:text="All"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:src="@color/rummy_White"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/ll_filter_cash"
+            android:background="@color/rummy_transparent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_filter_cash"
+                android:textAllCaps="true"
+                android:textColor="@color/rummy_White"
+                android:text="Cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView
+            android:src="@color/rummy_White"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/ll_filter_free"
+            android:background="@color/rummy_transparent"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_filter_free"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/rummy_White"
+                android:text="Free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            android:visibility="gone"
+            android:background="@color/rummy_transparent"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_filter_joined"
+            android:background="@drawable/rummy_btn_blue_square_less_corner_selector_bg"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_filter_joined"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/rummy_White"
+                android:text="Joined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/rummy_app_blue"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/marginSizeSmall"
+        android:paddingTop="@dimen/preLobbyTopBarMargin"
+        android:paddingRight="@dimen/marginSizeSmall">
+
+        <ImageView
+            android:id="@+id/logo_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.18"
+            android:contentDescription="@string/image_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.22"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/rummy_curve_edges_filled_app_blue_light_less_round"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/marginSizeMicro"
+                android:paddingRight="@dimen/marginSizeMicro">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/paddingSizeSmall"
+                        android:scrollbars="horizontal"
+                        android:text="Free"
+                        android:textColor="@color/rummy_White"
+                        android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                    <TextView
+                        android:id="@+id/user_fun_chips_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/paddingSizeSmall"
+                        android:scrollbars="horizontal"
+                        android:text="0"
+                        android:textColor="@color/rummy_White"
+                        android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                </LinearLayout>
+
+                <!--<ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/rummy_free_game_icon" />
+
+                <TextView
+                    android:id="@+id/user_fun_chips_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/paddingSizeSmall"
+                    android:scrollbars="horizontal"
+                    android:text="0"
+                    android:textColor="@color/rummy_White"
+                    android:textSize="@dimen/settingsViewInfoTitleTextSize" />-->
+
+                <ImageView
+                    android:id="@+id/reload_chips_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/rummy_reload_new" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/rummy_curve_edges_filled_app_blue_light_less_round"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/marginSizeMicro">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/paddingSizeSmall"
+                        android:scrollbars="horizontal"
+                        android:text="In Play "
+                        android:textColor="@color/rummy_White"
+                        android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                    <TextView
+                        android:id="@+id/inplay_fun_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/paddingSizeSmall"
+                        android:scrollbars="horizontal"
+                        android:textColor="@color/rummy_White"
+                        android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@color/rummy_app_blue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rummy_profile_icon"
+                android:contentDescription="@string/image_content"
+                android:padding="@dimen/half_fab_margin"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/rummy_White"
+                android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+            <include
+                android:id="@+id/player_rating_bar"
+                layout="@layout/rummy_rating_bar_view"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.22"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/rummy_curve_edges_filled_app_blue_light_less_round"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/marginSizeMicro"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/paddingSizeSmall"
+                        android:scrollbars="horizontal"
+                        android:text="Cash"
+                        android:textColor="@color/rummy_White"
+                        android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                    <TextView
+                        android:id="@+id/user_real_chips_value_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/paddingSizeSmall"
+                        android:scrollbars="horizontal"
+                        android:text="0"
+                        android:textColor="@color/rummy_color_one"
+                        android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                </LinearLayout>
+
+                <!--<ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/rummy_rupees_icon" />
+
+                <TextView
+                    android:id="@+id/user_real_chips_value_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/paddingSizeSmall"
+                    android:scrollbars="horizontal"
+                    android:text="0"
+                    android:textColor="@color/rummy_White"
+                    android:textSize="@dimen/settingsViewInfoTitleTextSize" />-->
+
+                <Button
+                    android:id="@+id/buyChipsBtn"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/rummy_addcash_new" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@color/rummy_app_blue" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/rummy_curve_edges_filled_app_blue_light_less_round"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/marginSizeMicro">
+
+                    <TextView
+                        android:id="@+id/inplay_value_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/paddingSizeSmall"
+                        android:scrollbars="horizontal"
+                        android:textColor="@color/rummy_White"
+                        android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/paddingSizeSmall"
+                        android:scrollbars="horizontal"
+                        android:text="In Play "
+                        android:textColor="@color/rummy_White"
+                        android:textSize="@dimen/settingsViewInfoTitleTextSize" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:background="@color/rummy_app_blue" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/rummy_curve_edges_filled_app_blue_light"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/no_of_players_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/rummy_White"
+                android:textSize="@dimen/filterBarTextSize" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/rummy_White" />
+
+            <TextView
+                android:id="@+id/no_of_tables_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/rummy_White"
+                android:textSize="@dimen/filterBarTextSize" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/filter"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/half_fab_margin"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                app:srcCompat="@drawable/rummy_ic_filter" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

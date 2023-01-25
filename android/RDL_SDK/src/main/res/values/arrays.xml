@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bet_items">
+        <item>LOW</item>
+        <item>MEDIUM</item>
+        <item>HIGH</item>
+    </array>
+    <array name="chips_items">
+        <item>FREE</item>
+        <item>CASH</item>
+    </array>
+    <array name="deals_game_types">
+        <item>BEST OF 2</item>
+        <item>BEST OF 6</item>
+        <item>BEST OF 3</item>
+    </array>
+    <array name="faq_answer_items">
+        <item>Yes, it is absolutely legal to play online rummy in India. The Indian Supreme Court has deemed Rummy as a game of skill and not a game of chance, and is protected under the Constitution of India under Article 19[1] (g).</item>
+        <item>With responsible gaming, fraud protection and 24/7 support, we aim at delivering a user friendly and secure online gaming experience at Dangal Games.</item>
+        <item>Your Profile at Dangal Games is only complete when you enter your PAN Card details into your account. You will need to log in to your account, go to My Account (on the right hand side bar) and click on Profile Overview to get to your profile, where you can update your account with other essential details that were not recorded during the Quick Sign Up process.\nYour profile consists of four sections: Validation Information, Personal Information, Address Information and Other Information. PAN Card number is a mandatory field in the last section (Other Information). Click on the Edit button below all the sections to simply enter your PAN Card number into your profile. If for any reason you do not have a PAN Card, you may enter UNIRV1234N into this field. You will then be able to carry out transactions like depositing money into your Rummy Dangal account, placing bets in cash games and Withdrawals of winnings successfully.</item>
+        <item>Opening a player account at Dangal Games is very simple. All you have to do is fill up the Quick Sign Up form on our homepage. You will need to provide us with a unique username and a password which you\'ll easily remember, then fill in your email address, birth date, state and gender. We suggest you enter your Mobile number in order to get notifications on your phone. It only takes a minute to create an account here, and then you\'re ready to play Rummy.</item>
+        <item>Enter your username and password in the corresponding boxes provided on the top right corner of the homepage (and every other page on the site). Then click on the Login button to access your Dangal Games account and begin playing.</item>
+        <item>Dangal Games does not allow players less than 18 years of age to sign up and play games at the site.</item>
+        <item>If you have forgotten your Dangal Games login details, click on Forgot Password? under the login panel. You will be asked to enter your email address recorded during the time of registration. An email will be sent to your inbox with instructions to set up a new password.</item>
+        <item>You may see and even edit your Dangal Games account details by logging into your account and clicking on the \'My Account\' tab to see your account details.</item>
+        <item>Login to your account and click on the Buy Cash Chips tab followed by Make a Deposit. Please select your payment method on the left and enter the correct amount that you wish to deposit. If you have a bonus code, enter it in the box provided and then click on \'Next\' to proceed further.</item>
+        <item>The minimum deposit amount at a given time at Dangal Games is Rs.100.</item>
+        <item>The maximum deposit limit at a given time at Dangal Games is Rs.20,000.</item>
+        <item>The minimum withdrawal amount at a given time at Dangal Games is Rs.100.</item>
+        <item>The maximum withdrawal limit at a given time at Dangal Games is Rs.10,000.</item>
+        <item>Once your submitted withdrawal is processed at our end, it may take between 2 to 5 working days for you to receive it, depending on your bank.</item>
+        <item>At Dangal Games, you can play the following different Rummy variants:\n\nPools Rummy: 101, 201, Best of 3\nPoints/ Strikes Rummy: With Joker, Without Joker\nDeals Rummy: Best of 2, Best of 6\nTournaments</item>
+        <item>If you lose your internet connection in the middle of a game at Dangal Games, your game will be set to Auto Play for the duration of disconnection. Once the connection is resumed, you can continue playing.</item>
+        <item>Dangal Games is a no-download Rummy game site. Once you register an account here, all you need to do is log in to your account and click on the Play Now button to get to the games lobby where you can choose a rummy variant, join a table and start playing.</item>
+    </array>
+    <array name="faq_items">
+        <item>Is it legal to play online rummy in India?</item>
+        <item>Are my personal and payment card details secure at Dangal Games?</item>
+        <item>What do I do if I don\'t have a PAN Card?</item>
+        <item>How do I open an account at Dangal Games?</item>
+        <item>How do I access my account?</item>
+        <item>Am I old enough to play at Dangal Games?</item>
+        <item>What if I forget my account password?</item>
+        <item>How do I see my account details?</item>
+        <item>How can I make a deposit?</item>
+        <item>What is the minimum deposit amount?</item>
+        <item>What is the maximum deposit amount?</item>
+        <item>What is the minimum withdrawal amount?</item>
+        <item>What is the maximum withdrawal amount?</item>
+        <item>How long will it take to receive my withdrawal?</item>
+        <item>What are the variants of Rummy available to play on Dangal Games?</item>
+        <item>What if my internet connection is lost while playing games at Dangal Games?</item>
+        <item>Can I play Rummy without downloading any software?</item>
+    </array>
+    <array name="game_type_items">
+        <item>101 </item>
+        <item>201 </item>
+    </array>
+    <array name="players_items">
+        <item>2</item>
+        <item>6</item>
+    </array>
+    <array name="points_rummy_items">
+        <item>Drop me on 3 missed moves</item>
+        <item>Drop me on 4 missed moves</item>
+        <item>Drop me on 5 missed moves</item>
+    </array>
+    <array name="pool_rummy_items">
+        <item>Drop me on 3 missed moves</item>
+        <item>Drop me on 4 missed moves</item>
+        <item>Drop me on 5 missed moves</item>
+    </array>
+    <array name="pr_game_types">
+        <item>JOKER</item>
+    </array>
+   <!-- <array name="pr_game_types">
+        <item>JOKER</item>
+        <item>NO JOKER</item>
+    </array>-->
+    <array name="report_problem_items">
+        <item>Net Disconnect</item>
+        <item>Game issues</item>
+        <item>Score issues</item>
+        <item>Other</item>
+    </array>
+    <!--<array name="settings_items">
+        <item>@string/game_settings</item>
+        <item>@string/player_cards</item>
+        <item>@string/last_hand</item>
+        <item>@string/score_board</item>
+        <item>@string/rummy_game_info</item>
+        <item>@string/rummy_report_problem</item>
+    </array>-->
+    <!--<array name="settings_items">
+        <item>@string/refresh_table</item>
+        <item>@string/rummy_game_info</item>
+        <item>@string/game_settings</item>
+        <item>@string/last_hand</item>
+        <item>@string/score_board</item>
+        <item>@string/report_bug</item>
+    </array>-->
+    <array name="settings_items">
+        <item>@string/game_info</item>
+        <item>@string/game_settings</item>
+        <item>@string/last_hand</item>
+        <item>@string/score_board</item>
+        <item>@string/report_bug</item>
+    </array>
+    <array name="variant_items">
+        <item>POOLS</item>
+        <item>DEALS</item>
+        <item>POINTS</item>
+    </array>
+</resources>

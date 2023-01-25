@@ -1,0 +1,3 @@
+class GenericResponseDM {
+  String result;
+}

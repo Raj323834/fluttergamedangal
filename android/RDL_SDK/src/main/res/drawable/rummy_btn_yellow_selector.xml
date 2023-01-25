@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"  >
+        <shape >
+            <gradient
+                android:startColor="@color/rummy_grey_dark"
+                android:centerColor="@color/rummy_grey_dark"
+                android:endColor="@color/rummy_grey_dark"
+                android:angle="0"/>
+
+            <corners android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"/>
+
+            <padding android:left="10dp"
+                android:right="10dp"/>
+        </shape>
+    </item>
+    <item android:state_focused="true" android:drawable="@color/rummy_moreScreenBg" />
+    <item  >
+        <shape >
+            <gradient
+                android:startColor="#af7a29"
+                android:centerColor="#fbbf62"
+                android:endColor="#faaf3b"
+                android:angle="0"/>
+
+            <corners android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"/>
+
+            <padding
+                android:left="10dp"
+                android:right="10dp"/>
+        </shape>
+
+    </item>
+</selector>

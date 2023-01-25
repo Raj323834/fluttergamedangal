@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/rummy_white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/rummy_white"
+        android:orientation="vertical">
+
+        <include layout="@layout/rummy_header" />
+        <include layout="@layout/rummy_lobby_header_filters" />
+
+        <LinearLayout
+            android:background="@drawable/rummy_prelobby_bg_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:background="@color/rummy_transparent"
+                android:scrollbars="none"
+                android:id="@+id/lobbylist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/fab_margin"
+                tools:listitem="@layout/rummy_lobby_adapter_item"
+                android:divider="@color/rummy_transparent"
+                android:dividerHeight="@dimen/fab_margin" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/lobby_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@drawable/rummy_progress_bar_new"
+        android:visibility="gone" />
+
+    <!--Filter layout-->
+    <LinearLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/rummy_transparent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/half_fab_margin"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_grey"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/rummy_White"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/closeFilter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/rummy_ic_close_circle" />
+
+                <Button
+                    android:id="@+id/submit_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/half_fab_margin"
+                    android:layout_marginRight="@dimen/half_fab_margin"
+                    android:background="@drawable/rummy_curve_edges_hollow_green"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/rummy_green"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/half_fab_margin"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chips:"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/free"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="Free"
+                            android:textColor="@color/rummy_White"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                        <CheckBox
+                            android:id="@+id/cash"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="Cash"
+                            android:textColor="@color/rummy_White"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:text="Variants:"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/pools"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="Pools"
+                            android:textColor="@color/rummy_White"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                        <CheckBox
+                            android:id="@+id/deals"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="Deals"
+                            android:textColor="@color/rummy_White"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                        <CheckBox
+                            android:id="@+id/points"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="Points"
+                            android:textColor="@color/rummy_White"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:text="Game Type:"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/select_variant"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_grey_hollow"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="Select Variant"
+                            android:textColor="@color/rummy_dark_grey"
+                            android:textSize="@dimen/textSizeLarge"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:id="@+id/game_type_pools"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <CheckBox
+                                android:id="@+id/pool101"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/half_fab_margin"
+                                android:background="@drawable/rummy_curve_edges_black"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/half_fab_margin"
+                                android:text="101"
+                                android:textColor="@color/rummy_white"
+                                android:textSize="@dimen/textSizeLarge" />
+
+                            <CheckBox
+                                android:id="@+id/pool201"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/half_fab_margin"
+                                android:background="@drawable/rummy_curve_edges_black"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/half_fab_margin"
+                                android:text="201"
+                                android:textColor="@color/rummy_white"
+                                android:textSize="@dimen/textSizeLarge" />
+
+                            <CheckBox
+                                android:id="@+id/bestOf3"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/half_fab_margin"
+                                android:background="@drawable/rummy_curve_edges_black"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/half_fab_margin"
+                                android:text="Best of 3"
+                                android:textColor="@color/rummy_white"
+                                android:textSize="@dimen/textSizeLarge" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/game_type_deals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <CheckBox
+                                android:id="@+id/bestOf2"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/half_fab_margin"
+                                android:background="@drawable/rummy_curve_edges_black"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/half_fab_margin"
+                                android:text="Best of 2"
+                                android:textColor="@color/rummy_white"
+                                android:textSize="@dimen/textSizeLarge" />
+
+                            <CheckBox
+                                android:id="@+id/bestOf6"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/half_fab_margin"
+                                android:background="@drawable/rummy_curve_edges_black"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/half_fab_margin"
+                                android:text="Best of 6"
+                                android:textColor="@color/rummy_white"
+                                android:textSize="@dimen/textSizeLarge" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/game_type_points"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <CheckBox
+                                android:id="@+id/jokerType"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/half_fab_margin"
+                                android:background="@drawable/rummy_curve_edges_black"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/half_fab_margin"
+                                android:text="Joker"
+                                android:textColor="@color/rummy_white"
+                                android:textSize="@dimen/textSizeLarge" />
+
+                            <CheckBox
+                                android:id="@+id/noJokerType"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/half_fab_margin"
+                                android:background="@drawable/rummy_curve_edges_black"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:padding="@dimen/half_fab_margin"
+                                android:text="No Joker"
+                                android:textColor="@color/rummy_white"
+                                android:textSize="@dimen/textSizeLarge" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:text="Bet:"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/lowBet"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="Low"
+                            android:textColor="@color/rummy_white"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                        <CheckBox
+                            android:id="@+id/mediumBet"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="Medium"
+                            android:textColor="@color/rummy_white"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                        <CheckBox
+                            android:id="@+id/highBet"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="High"
+                            android:textColor="@color/rummy_white"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fab_margin"
+                        android:text="Players:"
+                        android:textColor="@color/rummy_colorAccent"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/fab_margin"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/players2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="2"
+                            android:textColor="@color/rummy_white"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                        <CheckBox
+                            android:id="@+id/players6"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/half_fab_margin"
+                            android:background="@drawable/rummy_curve_edges_black"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:padding="@dimen/half_fab_margin"
+                            android:text="6"
+                            android:textColor="@color/rummy_white"
+                            android:textSize="@dimen/textSizeLarge" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

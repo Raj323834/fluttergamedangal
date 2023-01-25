@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rummy_lobby_filter_bg"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/half_fab_margin"
+
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/chips_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lobby_chips_header"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/chip_type_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rummy_ic_expand_more_white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01">
+
+            <ImageView
+                android:id="@+id/chips_type_drop_down_iv"
+                android:layout_width="@dimen/dropDownImageSize"
+                android:layout_height="@dimen/dropDownImageSize"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/rummy_filter_down_arrow"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/variants_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.12"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lobby_variants_header"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/variant_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rummy_ic_expand_more_white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01">
+
+            <ImageView
+                android:id="@+id/variants_drop_down_iv"
+                android:layout_width="@dimen/dropDownImageSize"
+                android:layout_height="@dimen/dropDownImageSize"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/rummy_filter_down_arrow"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/game_type_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lobby_game_type_header"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/game_type_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rummy_ic_expand_more_white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01">
+
+            <ImageView
+                android:id="@+id/game_type_drop_down_iv"
+                android:layout_width="@dimen/dropDownImageSize"
+                android:layout_height="@dimen/dropDownImageSize"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/rummy_filter_down_arrow"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/marginSizeSmall">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lobby_players_title"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_colorAccent"
+                    android:textSize="@dimen/filterBarTextSize" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/marginSizeMicroPlus"
+                android:src="@drawable/rummy_filter_down_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bet_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.12"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lobby_bet_type_header"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/bet_type_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rummy_ic_expand_more_white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01">
+
+            <ImageView
+                android:id="@+id/bet_type_drop_down_iv"
+                android:layout_width="@dimen/dropDownImageSize"
+                android:layout_height="@dimen/dropDownImageSize"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/rummy_filter_down_arrow"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/player_type_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.11"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lobby_players_header"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/player_type_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rummy_lobby_list_text"
+                    android:textSize="@dimen/filterBarTextSize" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rummy_ic_expand_more_white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01">
+
+            <ImageView
+                android:id="@+id/player_type_drop_down_iv"
+                android:layout_width="@dimen/dropDownImageSize"
+                android:layout_height="@dimen/dropDownImageSize"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/rummy_filter_down_arrow"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

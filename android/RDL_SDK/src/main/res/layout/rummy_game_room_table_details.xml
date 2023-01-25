@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_28sdp"
+    android:layout_height="@dimen/_25sdp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:id="@+id/rl_table_detail_root"
+    android:gravity="center"
+    android:padding="@dimen/_4sdp">
+
+    <ImageView
+        android:id="@+id/table_flash_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rummy_rounded_rect_orange"
+        android:src="@color/rummy_app_blue"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:id="@+id/rlView"
+        android:layout_above="@id/tableIdButtonLayout"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/table_user_6"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/table_user_5"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:src="@drawable/rummy_table_grey_circle" />
+
+        <ImageView
+            android:id="@+id/table_user_4"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rummy_table_grey_circle" />
+
+        <ImageView
+            android:id="@+id/table_user_3"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/table_user_4"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:src="@drawable/rummy_table_grey_circle" />
+
+        <ImageView
+            android:id="@+id/table_user_5"
+            android:layout_toLeftOf="@id/table_user_4"
+            android:layout_marginRight="3dp"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/rummy_table_grey_circle" />
+
+        <ImageView
+            android:id="@+id/table_user_1"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/rummy_table_orange_circle" />
+
+        <ImageView
+            android:id="@+id/table_user_2"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/table_user_3"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:src="@drawable/rummy_table_grey_circle" />
+
+        <Button
+            android:id="@+id/tableButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/rummy_gameroom_table_indicator"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/rummy_transparent"
+            android:textSize="@dimen/_4sdp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tableIdButtonLayout"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/game_type_free_iv"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/tableIdButton"
+            tools:src="@drawable/rummy_ic_bottombar_funchips"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/game_type_iv"
+            android:layout_width="6dp"
+            android:visibility="gone"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/tableIdButton"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/tableIdButton"
+            android:textColor="@color/rummy_white"
+            android:textSize="@dimen/_4sdp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text=""
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+    <!-- OLD CODE
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/tableButtonWidth"
+        android:layout_height="@dimen/tableBtnHeight"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/table_flash_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rummy_rounded_rect_orange"
+            android:src="@color/rummy_colorAccent"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/tableButtonWidth"
+            android:layout_height="@dimen/tableBtnHeight"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/table_user_6"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/gameRommTableBtnSize"
+                android:layout_alignBottom="@+id/tableButton"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/rummy_table_grey_circle" />
+
+            <ImageView
+                android:id="@+id/table_user_4"
+                android:layout_width="@dimen/gameRommTableBtnSize"
+                android:layout_height="@dimen/gameRommTableBtnSize"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rummy_table_grey_circle" />
+
+            <ImageView
+                android:id="@+id/table_user_3"
+                android:layout_width="@dimen/gameRommTableBtnSize"
+                android:layout_height="@dimen/gameRommTableBtnSize"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tableButton"
+                android:src="@drawable/rummy_table_grey_circle" />
+
+            <ImageView
+                android:id="@+id/table_user_5"
+                android:layout_width="@dimen/gameRommTableBtnSize"
+                android:layout_height="@dimen/gameRommTableBtnSize"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tableButton"
+                android:src="@drawable/rummy_table_grey_circle" />
+
+            <ImageView
+                android:id="@+id/table_user_1"
+                android:layout_width="@dimen/gameRommTableBtnSize"
+                android:layout_height="@dimen/gameRommTableBtnSize"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rummy_table_orange_circle" />
+
+            <ImageView
+                android:id="@+id/table_user_2"
+                android:layout_width="@dimen/gameRommTableBtnSize"
+                android:layout_height="@dimen/gameRommTableBtnSize"
+                android:layout_alignBottom="@+id/tableButton"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/rummy_table_grey_circle" />
+
+            <Button
+                android:id="@+id/tableButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/tableIconMargin"
+                android:background="@drawable/game_room_table_button"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/rummy_transparent"
+                android:textSize="7sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tableIdButton"
+            android:layout_centerInParent="true"
+            android:textColor="@color/rummy_white"
+            android:textSize="5sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    -->

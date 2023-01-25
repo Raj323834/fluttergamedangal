@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/rummy_transparent"
+    android:padding="6dp"
+    android:layout_width="@dimen/leave_table_dialog_width"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rummy_curve_edges_gray">
+
+        <LinearLayout
+            android:padding="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_msg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/rummy_black_gray"
+                android:textSize="@dimen/settingsViewTitleTextSize" />
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buychips_btn"
+                    android:text="Deposit"
+                    android:textAllCaps="false"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="2"
+                    android:background="@color/rummy_color_button"
+                    android:textColor="@color/rummy_White" />
+
+                <Button
+                    android:id="@+id/ok_btn"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="2"
+                    android:background="@color/rummy_grey"
+                    android:textColor="@color/rummy_black_gray" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ok_btn2"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/button_height"
+                android:background="@color/rummy_color_one"
+                android:textColor="@color/rummy_White" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/popUpCloseBtn"
+            android:layout_width="@dimen/popUpCloseBtnSize"
+            android:layout_height="@dimen/popUpCloseBtnSize"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/rummy_close"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

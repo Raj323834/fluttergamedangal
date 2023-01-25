@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/emptyStackCardWidth"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/emptyStackCardWidth"
+        android:layout_height="@dimen/emptyStackCardHeight"
+        android:layout_marginTop="@dimen/marginSizeMicroPlus">
+
+        <ImageView
+            android:id="@+id/cardImageView"
+            android:layout_width="@dimen/emptyStackCardWidth"
+            android:layout_height="@dimen/emptyStackCardHeight"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/jokerCardImg"
+            android:layout_width="@dimen/jokerCardWidthHeight"
+            android:layout_height="@dimen/jokerCardWidthHeight"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/cardStackJokerCardMarginBottom"
+            android:layout_marginLeft="@dimen/jokerCardMarginLeft"
+            android:src="@drawable/jocker_card_img"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/cardImageViewSelected"
+            android:layout_width="@dimen/emptyStackCardWidth"
+            android:layout_height="@dimen/emptyStackCardHeight"
+            android:scaleType="fitXY"
+            android:src="@drawable/rummy_selected_card"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

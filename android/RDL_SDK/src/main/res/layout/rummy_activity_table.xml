@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ListView
+                android:id="@+id/settingsListView"
+                android:layout_width="@dimen/settings_list_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/rummy_white"
+                android:choiceMode="singleChoice"
+                android:clickable="false"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+        </androidx.drawerlayout.widget.DrawerLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/game_info_layout"
+        layout="@layout/rummy_game_info_new"
+        android:layout_width="@dimen/gameSettingsViewWidth"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/game_settings_layout"
+        layout="@layout/rummy_game_settings_new"
+        android:layout_width="@dimen/gameSettingsViewWidth"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/report_problem_layout"
+        layout="@layout/rummy_report_problem"
+        android:layout_width="@dimen/gameSettingsViewWidth"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/player_discard_cards_layout"
+        layout="@layout/rummy_player_discard_window"
+        android:layout_width="@dimen/gameSettingsViewWidth"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/add_game_layout"
+        layout="@layout/rummy_dialog_add_new_game"
+        android:layout_width="@dimen/add_game_width"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/marginSizeExtraLarge"
+       android:layout_marginBottom="@dimen/add_game_bottom_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/game_tables_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginLeft="60dp"
+        android:foregroundGravity="center"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/rummy_transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/table1Btn"
+            layout="@layout/rummy_game_room_table_details"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/marginSizeMicro"
+            android:layout_height="wrap_content"
+        />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/table2Btn"
+                layout="@layout/rummy_game_room_table_details"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/marginSizeMicro"
+
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,169 @@
+{
+    "login_screen": {
+        "enter_your_number": "আপনার নাম্বার লিখুন",
+        "get_otp": "ওটিপি পান",
+        "or": "বা",
+        "enter_refer_code": "রেফার \nকোড লিখুন",
+        "enter_signup_code": "সাইন আপ \nকোড লিখুন",
+        "by_logging_in": "লগ ইন করে আমি দঙ্গল গেমসের পরিষেবার শর্তাবলী ও গোপনীয়তার নীতির প্রতি সম্মত হয়েছি"
+    },
+    "otp_screen": {
+        "otp_has_been": "{}-তে ওটিপি পাঠানো হয়েছে",
+        "change": "পরিবর্তন করবেন?",
+        "enter_otp": "ওটিপি লিখুন",
+        "resend_otp": "পুনরায় ওটিপি পাঠান।",
+        "by_logging_in": "লগ ইন করে আমি দঙ্গল গেমসের পরিষেবার শর্তাবলী ও গোপনীয়তার নীতির প্রতি সম্মত হয়েছি"
+    },
+    "home_screen": {
+        "add_cash_plus": "+নগদ যো...",
+        "transactions": "লেনদেন",
+        "deposit_history": "জমা করার ইতিহাস",
+        "withdrawal_history": "তোলার ইতিহাস",
+        "change_avatar": "অবতার পরিবর্তন করুন",
+        "kyc": "কেওয়াইসি",
+        "profile": "প্রোফাইল",
+        "home":"হোম",
+        "wallet": "ওয়ালেট",
+        "add_cash": "নগদ যোগ করুন",
+        "tnc": "শর্তাবলী",
+        "rsp_gaming": "দায়িত্বসম্পন্ন গেমিং",
+        "pp": "গোপনীয়তা নীতি",
+        "logout": "লগ আউট করুন",
+        "change_language": "ভাষা পরিবর্তন করুন",
+        "support": "সহায়তা",
+        "deals": "কারবার",
+        "footer": {
+            "all_games": "সবগুলি গেম",
+            "deals": "কারবার",
+            "home":"হোম",
+            "share":"শেয়ার",
+            "add_cash": "নগদ যোগ করুন",
+            "raf": "রেফার করে উপার্জন করুন",
+            "support": "সহায়তা",
+            "leaderboard": "লিডারবোর্ড"
+        }
+    },
+    "all_games_screen": {
+        "sports_games": "স্পোর্টস গেম",
+        "card_games": "কার্ড গেমস",
+        "casual_games": "ক্যাজুয়াল গেমস",
+        "call_break": "কল ব্র্যাক",
+        "pool": "বল পুল ",
+        "poker": "পোকার",
+        "fantasy": "ফ্যান্টাসি স্পোর্টস",
+        "street_racer": "স্ট্রিট রেসার",
+        "fruit_split": "ফ্রুইট স্প্লিট",
+        "quiz": "QUIZ",
+        "bubble_shooter": "বাবল\nশ্যুটার",
+        "rummy": "রামি",
+        "runner": "সুমো রানার",
+        "knife_hit": "নাইফ হিট",
+        "archery": "আর্চারি",
+        "carrom": "ক্যারাম",
+        "ludo": "LUDO",
+        "candy_clash": "ক্যান্ডি ক্ল্যাশ"
+    },
+    "profile_screen": {
+        "profile": "প্রোফাইল",
+        "username": "ইউজারনেম",
+        "mobile": "মোবাইল",
+        "email": "ইমেল",
+        "kyc": "কেওয়াইসি",
+        "first_name": "নামের প্রথমাংশ",
+        "middle_name": "নামের মধ্যাংশ",
+        "last_name": "নামের শেষাংশ",
+        "as_per_pan": "(প্যান অনুযায়ী)",
+        "date_of_birth": "জন্মতারিখ",
+        "gender": "লিঙ্গ",
+        "not_verified": "যাচাই করা হয়নি",
+        "select": "নির্বাচন করুন",
+        "submit": "জমা দিন",
+        "update": "আপডেট করুন",
+        "verify": "যাচাই করুন",
+        "add": "যোগ করুন"
+    },
+    "wallet_screen": {
+        "wallet": "ওয়ালেট",
+        "withdraw_cash": "নগদ তুলুন",
+        "withdrawal": "নগদ তোলা",
+        "deposit_cash": "নগদ জমা দিন",
+        "add_cash": "নগদ যোগ করুন",
+        "game_chips": "গেম চিপ",
+        "learn_more": "আরও জানুন",
+        "bonus_cash": "বোনাস নগদ",
+        "reload_coins": "পুনরায় কয়েন লোড করুন",
+        "poker_chips": "জুজু চিপ",
+        "transfer": "স্থানান্তর"
+    },
+    "kyc_screen": {
+        "kyc": "কেওয়াইসি",
+        "address_proof_type": "ঠিকানার প্রমাণপত্রের প্রকার",
+        "address_proof_no": "ঠিকানার প্রমাণপত্রের নাম্বার",
+        "Address_proof_fimg": "ঠিকানার প্রমাণপত্রের \nসামনের দিকের ছবি",
+        "Address_proof_bimg": "ঠিকানার প্রমাণপত্রের \nপিছনের দিকের ছবি",
+        "pan_no": "প্যানের নাম্বার",
+        "pan_fimg": "প্যানের \nসামনের দিকের ছবি",
+        "document_status": "নথির স্থিতি: ",
+        "choose_file": "ফাইল বেছে নিন",
+        "view_file": "ফাইল দেখুন",
+        "file_must_be": "(ফাইল অবশ্যই {} এবং {} এমবি-এর নীচে হতে হবে)",
+        "submit":"জমা দিন",
+        "you_must_complete": "কেওয়াইসি করার পূর্বে আপনি অবশ্যই\nআপনার প্রোফাইল সম্পূর্ণ করবেন।",
+        "complete_profile": "প্রোফাইল সম্পূর্ণ করুন",
+        "go_back": "ফিরে যান",
+        "aadhaar_no": "আধার নাম্বার",
+        "voter_no": "ভোটার আইডি নাম্বার",
+        "passport_no": "পাসপোর্ট নাম্বার",
+        "dl_no": "ড্রাইভিং লাইসেন্স নাম্বার"
+    },
+    "transaction_screen": {
+        "transactions": "লেনদেন",
+        "apply": "প্রয়োগ করুন"
+    },
+    "deposit_history_screen": {
+        "deposit_history": "জমা করার ইতিহাস",
+        "deposit": "জমা করুন",
+        "apply": "প্রয়োগ করুন"
+    },
+    "withdrawal_history_screen": {
+        "withdrawal_history": "তোলার ইতিহাস",
+        "withdrawals": "তোলা",
+        "apply": "প্রয়োগ করুন"
+    },
+    "change_avatar_screen": {
+        "change_avatar": "অবতার পরিবর্তন করুন",
+        "profile": "প্রোফাইল",
+        "avatar": "অবতার",
+        "submit": "জমা দিন"
+    },
+    "add_cash_screen": {
+        "add_cash": "নগদ যোগ করুন",
+        "enter_amt": "অর্থরাশি লিখুন",
+        "proceed_to": "নগদ যোগ করার জন্য এগিয়ে চলুন",
+        "have_a_promo": "প্রোমো কোড আছে?"
+    },
+    "raf_screen": {
+        "raf": "রেফার করে উপার্জন করুন",
+        "invite_friends": "বন্ধুদের আমন্ত্রণ করুন",
+        "or": "বা",
+        "share_via": "এর মাধ্যমে শেয়ার করুন"
+    },
+    "support_screen": {
+        "support": "সহায়তা",
+        "contact_on": "এখানে যোগাযোগ করুন"
+    },
+    "deals_screen": {
+        "deal_for_you": "আপনার জন্য কারবার",
+        "deals_page": "assets/images/DealsPage_bn.png",
+        "first_deposit": "assets/images/first_deposit_bn.webp",
+        "second_deposit": "assets/images/second_deposit_bn.webp",
+        "vip": "assets/images/vip_bn.webp",
+        "know_more_blue": "assets/images/know_more_blue_bn.png",
+        "know_more_orange": "assets/images/know_more_orange_bn.png",
+        "raf": "assets/images/raf.webp"
+    },
+    "gif": {
+        "support": "assets/images/support_bn.gif",
+        "raf": "assets/images/raf_bn.jpg"
+    }
+}

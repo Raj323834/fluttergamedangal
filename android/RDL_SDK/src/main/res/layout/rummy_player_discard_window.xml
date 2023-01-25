@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gameSettingsViewWidth"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/rummy_grey_dark_st_bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rummy_black_trans90">
+
+        <ImageView
+            android:layout_width="@dimen/settingsCloseBtnSize"
+            android:layout_height="@dimen/settingsCloseBtnSize"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_margin="@dimen/marginSizeMicroPlus"
+            android:src="@drawable/rummy_report_black" />
+
+        <in.glg.rummy.view.RummyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingSizeMediumPlus"
+            android:text="Discards"
+            android:textColor="@color/rummy_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/pop_up_close_btn"
+            android:layout_width="@dimen/settingsCloseBtnSize"
+            android:layout_height="@dimen/settingsCloseBtnSize"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/marginSizeMicroPlus"
+            android:src="@drawable/rummy_result_close_icon" />
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/player_discard_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="@null" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/half_fab_margin"
+    android:id="@+id/rl_dialog_low_balance_main_container"
+    android:background="@color/rummy_transparent">
+    <RelativeLayout
+        android:background="@drawable/rummy_curve_edges_gray"
+        android:layout_width="@dimen/errorChipsWidth"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_add_rest_amount_msg"
+                android:textColor="@color/rummy_black"
+                android:textSize="16dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/settingsViewTitleTextSize"
+                android:textColor="@color/rummy_black_gray"
+                android:gravity="center"
+                android:autoLink="web|all"
+                android:id="@+id/dialog_msg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ok_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:background="@color/rummy_color_button"
+                    android:text="Deposit"
+                    android:textColor="@color/rummy_white" />
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:textColor="@color/rummy_black"
+                    android:text="Cancel"
+                    android:layout_marginLeft="@dimen/double_fab_margin"
+                    android:background="@color/rummy_grey"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/popUpCloseBtn"
+            android:visibility="gone"
+            android:layout_width="@dimen/popUpCloseBtnSize"
+            android:layout_height="@dimen/popUpCloseBtnSize"
+            android:src="@drawable/rummy_close"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout></RelativeLayout>

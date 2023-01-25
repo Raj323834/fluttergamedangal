@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="580dp"
+    android:layout_height="match_parent"
+    android:background="@color/rummy_transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/rummy_score_board_border"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/rummy_curve_edges_filled_app_blue_dark_flat_bottom_less_round"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/score_board_item_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="@dimen/popUpCloseBtnSize"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/marginSizeMicroPlus"
+                    android:layout_marginRight="@dimen/marginSizeMicroPlus"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/scoreboard_header_txt"
+                    android:textColor="@color/rummy_white"
+                    android:textSize="@dimen/settingsViewTitleTextSize" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/score_board_header_view"
+                layout="@layout/score_board_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/marginSizeSmallPlus"
+                android:paddingRight="@dimen/marginSizeSmallPlus" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ListView
+                    android:id="@+id/score_board_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/rummy_scoreBoardbgColor"
+                    android:dividerHeight="1dp"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:id="@+id/no_entry_found_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/sb_no_enrtries_found_txt"
+                    android:textColor="@color/rummy_white"
+                    android:textSize="@dimen/settingsInfoTextSize" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pop_up_close_btn"
+        android:layout_width="@dimen/popUpCloseBtnSize"
+        android:layout_height="@dimen/popUpCloseBtnSize"
+        android:layout_alignParentRight="true"
+        android:contentDescription="closebtn"
+        android:src="@drawable/rummy_result_close_icon" />
+
+</RelativeLayout>

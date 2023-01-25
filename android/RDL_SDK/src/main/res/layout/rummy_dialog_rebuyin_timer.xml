@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/rummy_transparent"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rummy_curve_edges_gray">
+
+        <LinearLayout
+            android:padding="@dimen/marginSizeSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Would you like to rebuy ?"
+                android:textColor="@color/rummy_black_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/timer_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:text="Time remaining: 10 sec"
+                android:textColor="@color/rummy_black_gray"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="1dp"/>
+
+                <Button
+                    android:id="@+id/yes_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:text="YES"
+                    android:gravity="center"
+                    android:background="@color/rummy_color_button"
+                    android:textColor="@color/rummy_White" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".1"
+                    android:layout_height="1dp"/>
+
+                <Button
+                    android:id="@+id/no_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:text="NO"
+                    android:gravity="center"
+                    android:background="@color/rummy_grey"
+                    android:textColor="@color/rummy_black_gray" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="1dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/popUpCloseBtn"
+            android:layout_width="@dimen/popUpCloseBtnSize"
+            android:layout_height="@dimen/popUpCloseBtnSize"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/rummy_close"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

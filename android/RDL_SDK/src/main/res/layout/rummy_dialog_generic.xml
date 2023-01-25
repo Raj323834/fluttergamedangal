@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/rummy_transparent"
+    android:padding="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/rummy_curve_edges_gray"
+        android:padding="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/success_iv"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/half_fab_margin"
+                android:src="@drawable/rummy_ver_succuess"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:textSize="@dimen/settingsViewTitleTextSize"
+                android:textColor="@color/rummy_black_gray"
+                android:gravity="center"
+                android:id="@+id/dialog_msg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" You can not split the prize money in this game."
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:layout_marginTop="32dp"
+                android:id="@+id/ok_btn"
+                android:textAllCaps="false"
+                android:background="@color/rummy_color_button"
+                android:textColor="@color/rummy_white"
+                android:text="Ok"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/popUpCloseBtn"
+            android:visibility="gone"
+            android:layout_width="@dimen/closeBtnSize"
+            android:layout_height="@dimen/closeBtnSize"
+            android:src="@drawable/rummy_close"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout></LinearLayout>

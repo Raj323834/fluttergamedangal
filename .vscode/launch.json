@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      
+    {
+      "name": "PROD",
+      "program": "D:/flutter_projects/gamingplatformclient/lib/main_prod.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--flavor","prod","-t","lib/main_prod.dart"]
+    },
+    {
+      "name": "DEVELOP",
+      "program": "D:/flutter_projects/gamingplatformclient/lib/main_dev.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--flavor","dev","-t","lib/main_dev.dart"]
+    },
+    {
+      "name": "PROD-CO-IN",
+      "program": "D:/flutter_projects/gamingplatformclient/lib/main_prod_co_in.dart",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--flavor","prod_co_in","-t","lib/main_prod_co_in.dart"]
+    }
+  ]
+}

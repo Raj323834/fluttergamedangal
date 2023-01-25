@@ -1,0 +1,551 @@
+<resources>
+
+
+    <string name="app_name">Dangal Games</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">Rummy\nDangal</string>
+
+    <string name="facebook_app_id">2545723819010517</string>
+    <string name="fb_login_protocol_scheme">fb2545723819010517</string>
+
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">Login</string>
+
+    <string name="error_occurred">Error Occurred while fetching File\nPlease try again.</string>
+
+    <string name="new_user">New user ?</string>
+    <string name="create">Create</string>
+    <string name="already_have_account">Already have Dangal Games account ?</string>
+
+    <string name="email_support_centre">Email Support Centre</string>
+    <string name="name_username">Name/Username</string>
+    <string name="email">E-mail</string>
+    <string name="issue_query">Issue/Query</string>
+    <string name="details_desc_issue_query">Detailed description of issue/query</string>
+
+    <string name="enter_email">Enter your E-mail ID to request a password reset</string>
+    <string name="enter_email_hint">Enter your E-mail ID </string>
+    <string name="return_login">Return to login ?</string>
+    <string name="submit">Submit</string>
+
+
+    <string name="notes_1">2 free withdrawals left for this month, After this you will be charged 25.00 per withdrawal.</string>
+    <string name="notes_2">OTP to confirm the mobile number and address verified.</string>
+    <string name="notes_3">This OTP will be sent your registered mobile number via SMS.</string>
+    <string name="notes_4">Please enter the OTP in the box and click on &quot;Submit&quot;.</string>
+    <string name="notes_5">Please contact Support@dangalgames.com if you are facing any problem in receiving the OTP.</string>
+    <string name="notes_11">Withdrawal requests are processed every day except on bank holidays and once the withdrawal is processed from our end, it may take between 2 to 5 working days depending on the bank.</string>
+    <string name="notes_12">All withdrawals will be subject to audit before being processed.</string>
+
+    <string name="notes_13">Any winnings derived from the free money, promotional cash or free cash are not eligible for withdrawal.</string>
+
+    <string name="notes_14">Players must have a \'Real Money\' funded with atleast INR 100 prior to requesting for first withdrawal.</string>
+
+    <string name="notes_15">In order to ensure that withdrawal amount reaches the right person, all players making their first withdrawal request MUST send us a proof of ID (Passport or Driving License) and proof of residential address (phone bill or similar)</string>
+    <string name="cashier">Cashier</string>
+    <string name="support">Support</string>
+    <string name="more">More</string>
+    <string name="tpl">Rummy Premier League</string>
+    <string name="unique_features">Unique Features</string>
+    <string name="testimonials">Testimonials</string>
+    <string name="promotions">Promotions</string>
+
+    <string name="chips">Chips:</string>
+    <string name="variants">Variants:</string>
+    <string name="type">Type:</string>
+    <string name="bet">Bet:</string>
+    <string name="status">Status:</string>
+    <string name="cash">Cash</string>
+    <string name="tournaments">Tournaments</string>
+    <string name="view_all">View All</string>
+    <string name="low">Low</string>
+    <string name="select">Select</string>
+
+    <string name="tourney_id">Tourney ID</string>
+    <string name="entry">Entry</string>
+    <string name="cash_prize">Cash Prize</string>
+    <string name="start_time">Start Time</string>
+    <string name="status_">Status</string>
+    <string name="players">Players</string>
+    <string name="join_">Join</string>
+    <string name="schedules_and_tables">Schedules &amp; tables</string>
+    <string name="tourney_and_prize_info">Tourney &amp; Prize info</string>
+
+
+    <string name="title_activity_new_account">New Account</string>
+    <string name="title_activity_splash_screen">Dangal Games</string>
+    <string name="title_activity_loby">Loby</string>
+    <string name="title_activity_loby_full_screen">LobyFullScreen</string>
+
+    <string name="account_overview">Account Overview</string>
+    <string name="username">Username</string>
+    <string name="cash_balance">Cash balance</string>
+    <string name="fun_chips">Fun chips</string>
+    <string name="loyalty_club_status">Loyalty points and Club status</string>
+    <string name="player_status">Player status</string>
+    <string name="kyc_completed">KYC completed</string>
+
+    <string name="buy_chips">Buy Chips</string>
+    <string name="real_chips">Real Chips</string>
+    <string name="in_play">In Play</string>
+    <string name="fun_chips_camel_case">Fun Chips</string>
+    <string name="cash_games">Cash Games</string>
+    <string name="free_games">Free Games</string>
+
+    <string name="dart">Dart game</string>
+    <string name="piku">Pikachu</string>
+    <string name="bowl">Bowling</string>
+    <string name="venonat">Venonat</string>
+
+    <string name="email_us">E-mail us</string>
+    <string name="live_chat">Live chat</string>
+
+    <string name="deposit">Deposit</string>
+    <string name="withdrawal">Withdrawal</string>
+
+    <string name="select_deposit_amount">Select Deposit Amount</string>
+    <string name="choose_bonus">Choose Bonus</string>
+    <string name="choose_payment_option">Choose Payment Option</string>
+    <string name="done">Done</string>
+    <string name="select_amount">Select Amount</string>
+    <string name="quick_select">Quick Select</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <string name="free">Free</string>
+    <string name="loyalty">Loyalty</string>
+    <string name="pools">Pools</string>
+    <string name="deals">Deals</string>
+    <string name="points">Points</string>
+    <string name="favorties">Favorties</string>
+    <string name="eligible_tourneys">Eligible Tourneys</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="running">Running</string>
+
+    <string name="rupee_symbol">\u20B9</string>
+    <string name="rupee_symbol_blue"><![CDATA[<b><font color=#257CD7>\u20B9</font></b>]]></string>
+
+    <string name="closed_deck">CLOSED DECK</string>
+    <string name="open_deck">OPEN DECK</string>
+    <string name="closed_card">CLOSED CARD</string>
+    <string name="joker">JOKER</string>
+    <string name="sort">SORT</string>
+    <string name="drop">DROP</string>
+    <string name="declare">DECLARE</string>
+    <string name="extra_time">EXTRA\nTIME</string>
+    <string name="discard">Discard</string>
+    <string name="group">Group</string>
+
+    <string name="min_buyin">Min Buy In</string>
+    <string name="max_buyin">Max Buy In</string>
+    <string name="balance">Balance</string>
+    <string name="buy_in">Buy In</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">%1$s won\'t work unless you enable Google Play services.</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text_phone">%1$s won\'t run without Google Play services, which are missing from your phone.</string>
+    <string name="common_google_play_services_install_text_tablet">%1$s won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. If the problem persists, please contact the developer for assistance.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">%1$s won\'t run unless you update Google Play services.</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">%1$s won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_updating_title">Google Play services are updating</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="attachment_download_failed_message">Failed to download. Tap to retry.</string>
+    <string name="attachment_open_error_message">Can\'t open attachment</string>
+    <string name="attachment_upload_access_error_message">Error accessing file</string>
+    <string name="attachment_upload_size_limit_error_message">File size too large</string>
+    <string name="attachment_upload_source_camera_button">Take photo</string>
+    <string name="attachment_upload_source_gallery_button">Attach photo</string>
+    <string name="attachment_upload_type_error_message">File type not permitted</string>
+    <string name="chat_account_offline_message">There are currently no agents online.</string>
+    <string name="chat_activity_title">Chat</string>
+    <string name="chat_agent_joined_message">%1$s joined the chat</string>
+    <string name="chat_agent_left_message">%1$s left the chat</string>
+    <string name="chat_end_dialog_cancel_button">Cancel</string>
+    <string name="chat_end_dialog_confirm_button">End</string>
+    <string name="chat_end_dialog_message">Your chat session will be closed</string>
+    <string name="chat_end_dialog_title">End this chat?</string>
+    <string name="chat_ended_message">Chat ended</string>
+    <string name="chat_loading_message">Starting chat…</string>
+    <string name="chat_menu_end_button">End chat</string>
+    <string name="chat_session_timeout_message">We\'ve not heard from you for a while so this chat session has been closed. Please start a new chat if you still have questions.</string>
+    <string name="chat_visitor_queue_message">Please wait for an agent. There are currently %1$s visitor(s) waiting to be served.</string>
+    <string name="could_not_connect_error_message">Sorry, we can\'t connect you at the moment. Please try again later.</string>
+    <string name="could_not_connect_error_title">Could not connect</string>
+    <string name="email_transcript_cancel_button">Don\'t send</string>
+    <string name="email_transcript_confirm_button">Send</string>
+    <string name="email_transcript_email_cancel_button">Cancel</string>
+    <string name="email_transcript_email_confirm_button">OK</string>
+    <string name="email_transcript_email_hint">email@address.com</string>
+    <string name="email_transcript_email_message">Please enter your email address</string>
+    <string name="email_transcript_message">Send a transcript of this chat to your email address</string>
+    <string name="email_transcript_title">Email a transcript?</string>
+    <string name="input_field_hint">Message</string>
+    <string name="message_failed_tap_to_retry">Failed to send. Tap to retry.</string>
+    <string name="no_agents_message">Sorry there are no agents available to chat. Please try again later or leave us a message.</string>
+    <string name="no_agents_title">No agents available</string>
+    <string name="no_connection_error_message">You don\'t have an Internet connection at the moment. Please try again when connected</string>
+    <string name="no_connection_error_title">No connection</string>
+    <string name="no_connectivity_toast_message">No connection</string>
+    <string name="offline_email_error_hint">Please enter your email address</string>
+    <string name="offline_email_error_message">Email is required</string>
+    <string name="offline_email_hint">Email address</string>
+    <string name="offline_menu_send_button">Send</string>
+    <string name="offline_message_button">Leave a message</string>
+    <string name="offline_message_cancel_button">Cancel</string>
+    <string name="offline_message_error_hint">Please enter message</string>
+    <string name="offline_message_error_message">Message is required</string>
+    <string name="offline_message_hint">Message</string>
+    <string name="offline_message_retry_button">Retry</string>
+    <string name="offline_message_send_failed">Unable to send message</string>
+    <string name="offline_name_error_hint">Please enter your name</string>
+    <string name="offline_name_error_message">Name is required</string>
+    <string name="offline_name_hint">Name</string>
+    <string name="offline_sent_confirmation_message">Your message has been sent</string>
+    <string name="offline_validation_error_message">Please correct the above errors</string>
+    <string name="pre_chat_account_offline_dialog_cancel_button">Cancel</string>
+    <string name="pre_chat_account_offline_dialog_confirm_button">Message</string>
+    <string name="pre_chat_account_offline_dialog_message">There are currently no agents online. Would you like to send a message?</string>
+    <string name="pre_chat_departments_error_hint">Please select a department</string>
+    <string name="pre_chat_departments_error_message">Department is required</string>
+    <string name="pre_chat_departments_hint">Select a department</string>
+    <string name="pre_chat_email_error_message">Email is required</string>
+    <string name="pre_chat_email_hint">Email address</string>
+    <string name="pre_chat_email_validation_message">Please enter a valid email address</string>
+    <string name="pre_chat_menu_next_button">Next</string>
+    <string name="pre_chat_message_error_message">Message is required</string>
+    <string name="pre_chat_message_hint">Message</string>
+    <string name="pre_chat_name_error_message">Name is required</string>
+    <string name="pre_chat_name_hint">Name</string>
+    <string name="pre_chat_phone_error_message">Phone number is required</string>
+    <string name="pre_chat_phone_hint">Phone number</string>
+    <string name="pre_chat_phone_validation_message">Please enter a valid phone number</string>
+    <string name="pre_chat_validation_error_message">Please complete the required fields</string>
+    <string name="rate_this_chat_comment_label">Comment</string>
+    <string name="rate_this_chat_edit_comment_button">Edit comment…</string>
+    <string name="rate_this_chat_leave_a_comment_button">Leave a comment…</string>
+    <string name="rate_this_chat_leave_a_comment_title">Leave a comment</string>
+    <string name="rate_this_chat_menu_item_send">Send</string>
+    <string name="rate_this_chat_title">Rate this chat</string>
+    <string name="reconnect_timeout_cancel_button">No</string>
+    <string name="reconnect_timeout_confirm_button">Yes</string>
+    <string name="reconnect_timeout_message">Unable to reconnect. Continue trying?</string>
+    <string name="reconnect_timeout_title">Connection lost</string>
+    <string name="reconnecting_toast_message">Reconnecting…</string>
+    <string name="required_field_template">%1$s *</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
+    <string name="action_create_account">Register Now</string>
+    <string name="action_have_account">Already have Dangal Games Account?</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="alphaNumeric">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@._</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="balance_reload_err_msg">You can only reload if the balance is less than</string>
+    <string name="belvedere_dialog_camera">Camera</string>
+    <string name="belvedere_dialog_gallery">Gallery</string>
+    <string name="belvedere_dialog_unknown">Unknown</string>
+    <string name="belvedere_sample_camera">@string/attachment_upload_source_camera_button</string>
+    <string name="belvedere_sample_gallery">@string/attachment_upload_source_gallery_button</string>
+    <string name="belvedere_sdk_fpa_suffix">.belvedere.attachments</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="card_pick_msg">You have already picked the card</string>
+    <string name="cash_games_title">Cash Games</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="chips_reload_success_msg">Your account is successfully loaded with </string>
+    <string name="colon_delimiter">:</string>
+    <string name="color_swatch_description">Color %1$d</string>
+    <string name="color_swatch_description_selected">Color %1$d selected</string>
+    <string name="content_desc_game_results">gameResultsRummyItem</string>
+    <string name="create_account_terms_msg">By Clicking \"create\" you accept the Dangal Games Terms of service and Privacy Policy</string>
+    <string name="create_account_terms_msg1">By Clicking \"create\" you accept the Dangal Games</string>
+    <string name="create_account_terms_msg2">Terms and Conditions</string>
+    <string name="create_account_terms_msg3">and</string>
+    <string name="create_account_terms_msg4">Privacy Policy</string>
+    <string name="deals_txt">deals</string>
+    <string name="description">That&amp;apos;s the image to draw the progressbar around.</string>
+    <string name="drop_game_msg">Are you sure you want to drop your game?</string>
+    <string name="enter_email_id_prompt">Enter your mobile number or E-mail ID to request a password reset.</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_email">Please enter valid username/email</string>
+    <string name="error_invalid_email_id">Please enter valid email</string>
+    <string name="error_invalid_password">Please enter valid password</string>
+    <string name="error_restart">Error..! Please Restart</string>
+    <string name="extra_time_err_msg">You have already requested extra time</string>
+    <string name="forgot_password_email_hint">E-mail ID</string>
+    <string name="forgot_password_txt">Forgot Password ?</string>
+    <string name="free_games_title">Free Games</string>
+    <string name="error_username_min_max_length">Should be between 4-15 characters</string>
+    <string name="error_password_min_max_length">Should be between 5-15 characters</string>
+    <string name="game_info">Game Information</string>
+    <string name="game_info_entry_fee">Entry Fee</string>
+    <string name="game_info_extra_time">Extra Time</string>
+    <string name="game_info_auto_extra_time">Auto Extra Time</string>
+    <string name="game_info_first_drop">First Drop</string>
+    <string name="game_info_variant">Variant</string>
+    <string name="game_info_first_middle_drop">Drops (First,Middle)</string>
+    <string name="game_info_full_count">Full Count</string>
+    <string name="game_info_game_id">Game ID</string>
+    <string name="game_info_max_extra_time_move">Max Extra Time / Move</string>
+    <string name="game_info_middle_drop">Middle Drop</string>
+    <string name="game_info_more_info_header">More Info</string>
+    <string name="game_info_move_time">Turn Timer</string>
+    <string name="game_info_table_id">Table ID</string>
+    <string name="game_info_time_header">Time</string>
+    <string name="game_info_img_feature_header">FEATURES ENABLED</string>
+    <string name="game_info_player_protection">PLAYER PROTECTION</string>
+    <string name="game_info_smart_correction">SMART CORRECTION</string>
+    <string name="game_info_auto_play">AUTO\nPLAY</string>
+    <string name="game_result_game_starts_msg">Please wait while your game starts in </string>
+    <string name="game_results_count_header">Count</string>
+    <string name="socket_discon_msg">Oops!\n\nYou have lost your internet connection.\nYour game has been set to <b>Auto Play</b>.\nPlease wait while we attempt to reconnect.</string>
+    <string name="game_results_name_header">Name</string>
+    <string name="game_results_result_header">Result</string>
+    <string name="game_results_show_cards_header">Show Cards</string>
+    <string name="game_results_total_count_header">Total Count</string>
+    <string name="game_settings">Game Settings</string>
+    <string name="refresh_table">Refresh Table</string>
+    <string name="game_start_msg">Please wait game is starting</string>
+    <string name="game_starts_msg">The game will start in </string>
+    <string name="state_block_message">Our services are currently not available on Dangal Games in your state. As the state regulation prohibits a player from using the services offered by us.</string>
+    <string name="hash">#</string>
+    <string name="help_faq">Help &amp; FAQ\'s</string>
+    <string name="home">Home</string>
+
+    <string name="image_content">contentDescription</string>
+    <string name="info_app_crashed">Aplication crashed</string>
+    <string name="info_connect_to_wifi">Please connect to wifi</string>
+    <string name="auto_play">Auto Play</string>
+    <string name="info_iam_back">You can click on the \"I Am Back\" now</string>
+    <string name="info_live_engineering_progress">You can not start the screen recording while live engineering is in progress.</string>
+    <string name="info_msg_iam_back">Please click on the \"I Am Back\" \nbutton to continue with your game</string>
+    <string name="info_screen_recording_inprogress">You can not start the live engineering while screen recording is in progress.</string>
+    <string name="info_screen_recording_not_started">Screen recording is not started, please swipe right with three fingers to start recording</string>
+    <string name="info_screen_recording_progress">Screen recording is in progress...</string>
+    <string name="info_tripod_setup_title">Tripod setup</string>
+
+    <string name="join">JOIN</string>
+
+    <string name="joker_title_txt">Joker</string>
+    <string name="last_hand">Last Hand</string>
+
+    <string name="lobby">Lobby</string>
+    <string name="lobby_bet_header">Bet</string>
+    <string name="lobby_bet_type_header">Bet</string>
+    <string name="lobby_chips_header">Chips</string>
+    <string name="lobby_chips_title">Chips</string>
+    <string name="lobby_game_type_header">Game Type</string>
+    <string name="lobby_game_type_title">Game Type</string>
+    <string name="lobby_players_header">Players</string>
+    <string name="lobby_players_title">Players</string>
+    <string name="lobby_pool_title_txt">Pool</string>
+    <string name="lobby_rummy_title_txt">Rummy</string>
+    <string name="lobby_variants_header">Variants</string>
+    <string name="lobby_variants_title">Variants</string>
+    <string name="login_remember_me_txt">Remember me</string>
+    <string name="logout">Logout</string>
+    <string name="logout_error_msg">You cannot logout at this stage.</string>
+    <string name="max_table_reached_msg">You have reached maximum number (2) of tables. Please close a table to open a new one</string>
+
+    <string name="mobile_chat_referrer">Mobile chat connected</string>
+    <string name="more_account_overview">Account Overview</string>
+    <string name="more_cash_balance">Cash balance</string>
+    <string name="more_fun_chips">Fun chips</string>
+    <string name="more_kvc_completed">KYC Completed</string>
+    <string name="more_loyaloty_txt">Loyalty Points &amp; club status</string>
+    <string name="more_player_status">Player Status</string>
+    <string name="more_settings_and_tools">Settings &amp; Tools</string>
+    <string name="more_username">Username</string>
+    <string name="new_user_title_txt">NEW USER?</string>
+    <string name="no_btn_txt">NO</string>
+
+    <string name="no_internet_connection">No active internet connection</string>
+    <string name="no_thanks_btn_text">No Thanks</string>
+    <string name="other_login_err_msg">You have been logged out as you have logged in some other system/browser.</string>
+
+    <string name="player_discard_cards_header">Player Discard Cards</string>
+    <string name="please_wait_msg">Please wait...</string>
+    <string name="points_txt">points</string>
+    <string name="pools_txt">pools</string>
+    <string name="preblobby_fun_in_play_txt">In Play  :</string>
+    <string name="preblobby_in_play_txt">In Play  :</string>
+    <string name="prelobby_fun_chips_txt">Fun Chips  :</string>
+    <string name="prelobby_real_chips_txt">Real Chips  :</string>
+    <string name="prelobby_welcome_title">Welcome,</string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_username">Username</string>
+    <string name="report_problem">Report a Problem</string>
+    <string name="report_bug">Report a Bug</string>
+    <string name="responsible_gaming_txt">Responsible Gaming</string>
+    <string name="rupee_text">₹</string>
+    <string name="sb_no_enrtries_found_txt">There are no entries.</string>
+
+    <string name="score_board">Scoreboard</string>
+    <string name="login_type"><u>Login Via Password</u></string>
+    <string name="login_type_2"><u>Login Via OTP</u></string>
+    <string name="scoreboard_header_txt">Scoreboard</string>
+    <string name="seating">Seating:</string>
+    <string name="entered_wrong_no"><u>Entered a Wrong number?</u></string>
+    <string name="seconds_txt"> Second(s).</string>
+    <string name="split_request_pop_up_msg">Do you want to split the prize money?</string>
+    <string name="submit_btn_txt">Submit</string>
+    <string name="success_popup_header">Thanking you</string>
+    <string name="success_reg_msg">Your registration is successful</string>
+    <string name="success_forgot_password_msg">An email with a link to set your new password has been sent to you.</string>
+    <string name="support_email_note_txt">&lt;b&gt;Note:&lt;/b&gt;&lt;br/&gt;If you are logged into your account then we will autofill the Name/Username &amp; Email Column.</string>
+    <string name="support_email_txt">We have a dedicated Customer Service Team to help resolve all kind of issues and upon receiving an email/ticket from you, an automated response is sent to you with the ticket number for your reference and our team will get back to you as soon as possible.\n\nThank you for your patience, we are also working towards adding more support channels in the coming few months.</string>
+    <string name="tab_more">More</string>
+    <string name="preferences_text">Players requesting for a withdrawal require to update their preferences. These updated preferences are valid for 180 days.\n\nPlease select the below preferred Preferences for us to contact you.</string>
+    <string name="tab_support">Support</string>
+
+    <string name="tables">Tables</string>
+    <string name="tajrummy_terms">© 2020 Dangal Games. All Rights Reserved.</string>
+    <string name="title_activity_lobby">LobbyActivity</string>
+    <string name="toss_info_msg">Please wait for the toss.</string>
+    <string name="tripod_app_name">Tripod</string>
+    <string name="tripod_error_submitting_picture">Error submitting picture</string>
+    <string name="tripod_hint_screenshot_desc">Description</string>
+    <string name="tripod_hint_screenshot_summary">Summary</string>
+    <string name="tripod_info_swipe_again">Please swipe with three fingers to record</string>
+    <string name="tripod_message_app_data">Access your application depositResponseData folder at the belwo URL</string>
+    <string name="tripod_message_no_internet_connection">No active internet connection</string>
+    <string name="tripod_message_recording_platfrom_error">Screen recording is only available on Android 5.0 and above</string>
+    <string name="tripod_message_submit_complete">Picture reported</string>
+    <string name="tripod_message_submiting">Submitting picture</string>
+    <string name="tripod_pensettings_title">Pen Settings</string>
+    <string name="tripod_pensettings_title_highlight">Highlight</string>
+    <string name="tripod_pensettings_title_pen">Pen</string>
+    <string name="tripod_save">Save</string>
+    <string name="tripod_send_picture">Sending…</string>
+    <string name="tripod_stop">Stop</string>
+    <string name="tripod_title_application_data">Application Data</string>
+    <string name="tripod_title_no_action">Oops..</string>
+    <string name="tripod_title_picture_transmit">Submitting picture</string>
+    <string name="tripod_title_stopping_live_server">Stopping..</string>
+    <string name="unknown_server_error">Unknown Server Error</string>
+    <string name="use_smart_correction_btn_txt">Use Smart Correction</string>
+
+
+    <string name="winners_dialog_header">WINNERS</string>
+    <string name="won_toss_msg">won the toss</string>
+
+    <string name="yes_btn_txt">YES</string>
+
+    <string name="my_account">My Account</string>
+    <string name="account_history">Account History</string>
+    <string name="profile_overview">Profile Overview</string>
+    <string name="your_preferences">Your Preferences</string>
+    <string name="change_password">Change Password</string>
+    <string name="update_email">Update Email ID</string>
+    <string name="update_mobile_number">Update Mobile Number</string>
+    <string name="update_kyc_docs">Update KYC Documents</string>
+    <string name="deposit_history">Deposit History</string>
+    <string name="withdraw_history">Withdraw History</string>
+    <string name="bonus_history">Bonus History</string>
+    <string name="loyalty_points_history">Loyalty Points History</string>
+    <string name="reconcile_reports">Reconcile Reports</string>
+    <string name="game_logs">Game Logs</string>
+    <string name="refer_friend_logs">Refer a Friend Logs</string>
+    <string name="withdraw_flowback">Withdraw Flowback</string>
+    <string name="loyalty_points">Loyalty Points</string>
+    <string name="withdraw_cash">Withdraw Cash</string>
+    <string name="transaction_status">Transaction Status</string>
+    <string name="banking">Banking</string>
+    <string name="add_new_bank_account">Add New Bank Account</string>
+    <string name="refer_a_friend">Refer a Friend</string>
+
+    <string name="write_file">This app needs access to your file storage so that it can write files.</string>
+
+    <!--rummy_table messages all-->
+
+    <string name="iam_back_error_info">You cannot rejoin the game in the last 4 seconds.Please wait until current turn updates to the next player and then you can click on I am back</string>
+    <string name="info_wait_for_turn">Please wait for your turn</string>
+    <string name="joker_card_pick_info_msg">You cannot pick a joker card.</string>
+    <string name="leave_table_card_distribution">You cannot leave the table during card distribution</string>
+    <string name="leave_table_info">You cannot leave the table at this stage.</string>
+    <string name="leave_table_msg">Are you sure you want to leave the table?</string>
+    <string name="leave_table_pick_card">You cannot leave after picking a card.</string>
+    <string name="leave_table_show">You cannot leave the table during the show</string>
+    <string name="leave_table_toss">You cannot leave the table during the toss.</string>
+    <string name="meld_success_msg">Please send your cards in </string>
+    <string name="meld_suggested_text">Meld Suggested by Smart Correction</string>
+    <string name="no_entries_found_msg">No entries found.</string>
+    <string name="place_show_msg">Are you sure you want to place a show?</string>
+    <string name="player_cards">Player Discard Cards</string>
+    <string name="sc_meld_submitted_text">Meld Submitted by You</string>
+    <string name="send_your_cards_msg">Please send your cards : </string>
+    <string name="show_message"> has placed the show , please wait while we evaluate the cards in </string>
+    <string name="split_request_messsage">You have requested for split, please wait until opponent decide.</string>
+    <string name="table_close_msg">This table has been closed.Please join another table</string>
+    <string name="user_chosen_extra_time_msg">You have chosen to extend your time</string>
+    <string name="wait_for_next_player_msg">Please wait for 1 more player to join</string>
+    <string name="winner_congrats_pop_up_msg">Congratulations! You won the game\nDo you want to join 1 more game?</string>
+    <string name="wrond_meld_message">Oops! Looks like you have done a wrong meld.\nPlease wait while Smart Correction melds your cards in the correct sequence and sets in </string>
+    <string name="wrong_meld_msg_sc">Oops! Looks like you have done a wrong meld. \nYou can use Smart Correction to meld your cards in the correct sequences and sets.</string>
+
+
+    <string name="player_joined_str"><u>JOINED PLAYERS</u></string>
+    <string name="player_waitlist_str"><u>WAITLIST PLAYERS</u></string>
+    <string name="auto_drop_game_msg">Are you sure you want to auto drop your game?</string>
+    <string name="rummy_low_balance_first">You must add at least</string>
+    <string name="rummy_low_balance_second">to your DangalGames wallet to join this table and start playing</string>
+    <string name="same_table_join_msg">Your are joining same table, Pleaes select different one.</string>
+    <string name="add_money_msg_when_table_joined">You have joined a table, Please leave the table to Add Money</string>
+    <string name="table_not_found"><![CDATA[>No table available for this match]]></string>
+    <string name="low_balance_free_chip">You don\'t have enough chips to join this table</string>
+    <string name="rummy_max_table_reached_msg">You have reached maximum number of tables. Please close a table to open a new one</string>
+    <string name="bullet_view">•</string>
+    <string name="rummy_resume_title">You have opted to Drop.\nPoints will be deducted on your turn.</string>
+
+    <!--rummy_table messages end-->
+
+
+</resources>

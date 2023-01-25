@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/star_1"
+        android:layout_width="@dimen/starWidth"
+        android:layout_height="@dimen/starHeight"
+        android:scaleType="fitXY"
+        android:src="@drawable/rummy_star"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/star_2"
+        android:layout_width="@dimen/starWidth"
+        android:layout_height="@dimen/starHeight"
+        android:scaleType="fitXY"
+        android:src="@drawable/rummy_star"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/star_3"
+        android:layout_width="@dimen/starWidth"
+        android:layout_height="@dimen/starHeight"
+        android:scaleType="fitXY"
+        android:src="@drawable/rummy_star"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/star_4"
+        android:layout_width="@dimen/starWidth"
+        android:layout_height="@dimen/starHeight"
+        android:scaleType="fitXY"
+        android:src="@drawable/rummy_star"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/star_5"
+        android:layout_width="10sp"
+        android:layout_height="10sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rummy_star"
+        android:visibility="visible" />
+</LinearLayout>

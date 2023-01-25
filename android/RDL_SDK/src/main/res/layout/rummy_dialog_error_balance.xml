@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/half_fab_margin"
+    android:background="@color/rummy_transparent">
+    <RelativeLayout
+        android:background="@drawable/rummy_curve_edges_gray"
+        android:layout_width="@dimen/errorChipsWidth"
+        android:layout_height="@dimen/errorChipsHeight">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="@dimen/settingsViewTitleTextSize"
+                android:textColor="@color/rummy_black_gray"
+                android:gravity="center"
+                android:autoLink="web|all"
+                android:id="@+id/dialog_msg_tv"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/ok_btn"
+                android:textColor="@color/rummy_White"
+                android:text="OK"
+                android:background="@color/rummy_color_button"
+                android:layout_width="@dimen/loadChipsOkBtnWidth"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/popUpCloseBtn"
+            android:visibility="gone"
+            android:layout_width="@dimen/popUpCloseBtnSize"
+            android:layout_height="@dimen/popUpCloseBtnSize"
+            android:src="@drawable/rummy_close"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true" />
+        </RelativeLayout></RelativeLayout>

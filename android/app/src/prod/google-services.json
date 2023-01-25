@@ -1,0 +1,132 @@
+{
+  "project_info": {
+    "project_number": "667323956041",
+    "project_id": "gaming-engine-318308",
+    "storage_bucket": "gaming-engine-318308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667323956041:android:7904c2a15b79118231f898",
+        "android_client_info": {
+          "package_name": "com.app.dangalgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667323956041-af0aumu03k4rvds3e2ik1dmi5gadg1pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.dangalgames",
+            "certificate_hash": "f7f5dbd61f5bc870698ae4aab9afd79ee843f402"
+          }
+        },
+        {
+          "client_id": "667323956041-kmced9hv67bfuhn2qig2h2qc7ocils71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.dangalgames",
+            "certificate_hash": "0435aa833b372b143cf75f051846fb6f11eff6f0"
+          }
+        },
+        {
+          "client_id": "667323956041-sfomp95ps7v3nanpdlqg8vbim9osuphj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.dangalgames",
+            "certificate_hash": "da6d02ff58048e60946e34ad1ef72af8e584425a"
+          }
+        },
+        {
+          "client_id": "667323956041-u3n5t2k3p0kkvlii35r1k3k2pc0dpj7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.dangalgames",
+            "certificate_hash": "b0b9b8980691cc955bc03e31f38a2837a78dd22e"
+          }
+        },
+        {
+          "client_id": "667323956041-norqumvf61g594qa54k9k6kph7o1otca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF_vWYgpiHyap8FyekV5BB_lHNXjYNw6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667323956041-norqumvf61g594qa54k9k6kph7o1otca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667323956041:android:1a1fe0624881458931f898",
+        "android_client_info": {
+          "package_name": "com.app.dangalgames.co.in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667323956041-40mehncigdlg57jmmia0ddln5g7gjh0c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.dangalgames.co.in",
+            "certificate_hash": "0435aa833b372b143cf75f051846fb6f11eff6f0"
+          }
+        },
+        {
+          "client_id": "667323956041-c7qv2334ad5qa92koaqkrtieubj24dfp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.dangalgames.co.in",
+            "certificate_hash": "da6d02ff58048e60946e34ad1ef72af8e584425a"
+          }
+        },
+        {
+          "client_id": "667323956041-j8tgt8gt800shoe2s4vfte4371aansd6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.dangalgames.co.in",
+            "certificate_hash": "f7f5dbd61f5bc870698ae4aab9afd79ee843f402"
+          }
+        },
+        {
+          "client_id": "667323956041-t7tud549sj58crfjg5ba1uauao0gc4qi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.dangalgames.co.in",
+            "certificate_hash": "b0b9b8980691cc955bc03e31f38a2837a78dd22e"
+          }
+        },
+        {
+          "client_id": "667323956041-norqumvf61g594qa54k9k6kph7o1otca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF_vWYgpiHyap8FyekV5BB_lHNXjYNw6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667323956041-norqumvf61g594qa54k9k6kph7o1otca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

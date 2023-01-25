@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--dev play store-->
+<resources>
+    <string name="app_name">Dangal Games PS</string>
+    <string name="facebook_app_id">483417936413765</string>
+    <string name="fb_login_protocol_scheme">fb483417936413765</string>
+    <string name="facebook_client_token">35f049dbb38cff87f1918deac89b8965</string>
+    <string name="clevertap_account_id">TEST-94W-894-WK6Z</string>
+    <string name="clevertap_token">TEST-4cb-04c</string>
+    <string name="fcm_sender_id">id:380931591987</string>
+</resources>

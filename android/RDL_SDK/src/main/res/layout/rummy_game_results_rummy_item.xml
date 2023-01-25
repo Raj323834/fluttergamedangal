@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/game_results_cards_width"
+        android:layout_height="@dimen/game_results_cards_height">
+
+        <ImageView
+            android:id="@+id/cardImageView"
+            android:layout_width="@dimen/game_results_cards_width"
+            android:layout_height="@dimen/game_results_cards_height"
+            android:contentDescription="@string/content_desc_game_results" />
+
+        <ImageView
+            android:id="@+id/game_results_jokerCardImg"
+            android:layout_width="@dimen/gameResultJokerSize"
+            android:layout_height="@dimen/gameResultJokerSize"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/gameResultJockerMarginBottom"
+            android:layout_marginLeft="@dimen/gameResultJockerMarginLeft"
+            android:src="@drawable/jocker_card_img"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

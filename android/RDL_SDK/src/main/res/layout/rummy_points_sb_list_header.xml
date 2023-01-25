@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/rummy_scoreBoardbgColor"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/rummy_gameScreenDividerColor"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/score_board_item_height"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/marginSizeMicro"
+        android:paddingTop="@dimen/marginSizeMicro">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/marginSizeLarge"
+            android:layout_weight="0.09"
+            android:gravity="center"
+            android:text="Round"
+            android:textColor="@color/rummy_black_gray"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_scoreBoardbgColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:text="Game Id"
+            android:textColor="@color/rummy_black_gray"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_gameScreenDividerColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginSizeLarge"
+            android:layout_marginRight="@dimen/marginSizeLarge"
+            android:layout_weight="0.12"
+            android:gravity="center"
+            android:text="Result"
+            android:textColor="@color/rummy_black_gray"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_gameScreenDividerColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginSizeLarge"
+            android:layout_marginRight="@dimen/marginSizeLarge"
+            android:layout_weight="0.11"
+            android:gravity="center"
+            android:text="Count"
+            android:textColor="@color/rummy_black_gray"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/rummy_gameScreenDividerColor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginSizeLarge"
+            android:layout_marginRight="@dimen/marginSizeLarge"
+            android:layout_weight="0.11"
+            android:gravity="center"
+            android:text="Score"
+            android:textColor="@color/rummy_black_gray"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

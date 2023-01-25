@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/player_details_main_root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center|left"
+    android:layout_height="match_parent"
+    android:layout_width="@dimen/playerBoxWidth"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:gravity="center|left"
+        android:layout_height="match_parent"
+        android:layout_width="@dimen/playerBoxWidth"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/player_details_root_layout"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/playerBoxWidth">
+
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/rummy_player_bg" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/player_name_tv"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:textColor="@color/rummy_WhiteSmoke"
+                    android:textSize="9sp"
+                    android:textStyle="normal" />
+
+                <include
+                    android:id="@+id/player_rating_bar"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:visibility="invisible"
+                    layout="@layout/rummy_rating_bar_view" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/player_points_tv"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:maxLines="1"
+                        android:textColor="@color/rummy_Orange"
+                        android:textSize="@dimen/playerBoxTextSize"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/player_rank_tv"
+                        android:gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:maxLines="1"
+                        android:visibility="gone"
+                        android:textColor="@color/rummy_Orange"
+                        android:textSize="@dimen/playerBoxTextSize"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/player_system_iv"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="@dimen/mobile_player_icon_size"
+                android:layout_marginBottom="@dimen/playerStatucIconMarginBottom"
+                android:layout_marginLeft="@dimen/playerStatucIconMarginLeft"
+                android:layout_width="@dimen/mobile_player_icon_size"
+                android:src="@drawable/rummy_mobile"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/player_dealer_iv"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/mobile_player_icon_size"
+                android:layout_marginBottom="@dimen/playerStatucIconMarginBottom"
+                android:layout_marginRight="@dimen/playerStatucIconMarginLeft"
+                android:layout_width="@dimen/mobile_player_icon_size"
+                android:src="@drawable/rummy_d_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_drop_iv"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:src="@drawable/rummy_player_drop" />
+    </RelativeLayout>
+</RelativeLayout>
